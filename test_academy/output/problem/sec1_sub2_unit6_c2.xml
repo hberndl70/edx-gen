@@ -1,0 +1,20 @@
+<problem display_name="Knowledge Check - Question 2" max_attempts="3" weight="1.0" rerandomize="always">
+  <choiceresponse>
+    <label><p>If you have 3 machines on Exoscale and you have a sudden traffic spike and the machines transfer 5 GB in one hour but otherwise incur no traffic, for how much data do you have to pay excess bandwidth fees?</p>
+</label>
+    <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
+    <checkboxgroup>
+      <choice correct="false"> None, the usage is within my allowance.</choice>
+      <choice correct="true"> 5 - (3 x 1.42) = 0.74 GB of data.</choice>
+      <choice correct="false"> 5 GB of data.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution"><p>Ist the allowance sufficent for this scenario? No it isn't. So we have to pay for the difference. </p>
+</div>
+    </solution>
+  </choiceresponse>
+  <demandhint>
+    <hint>3 x 1.42 GB vs 5 GB ...</hint>
+    <hint>5 - (3 x 1.42) = ???</hint>
+  </demandhint>
+</problem>

@@ -1,0 +1,21 @@
+<problem display_name="Knowledge Check - Question 1" max_attempts="3" weight="1.0" rerandomize="always">
+  <choiceresponse>
+    <label><p>If you create a Medium instance (0.04040 EUR/hr) with a 50 GB disk (0.00013 EUR/GB/hr) attached to it<br/>
+and run Windows (0.01010 EUR/hr) on it for 24 hours, how much will you pay?</p>
+</label>
+    <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
+    <checkboxgroup>
+      <choice correct="false"> 24 x 0.04040 = 0.97 EUR ... you only need to pay for the machine.</choice>
+      <choice correct="false"> 24 x 0.04040 + 24 x 50 x 0.00013 = 1.13 EUR ... you pay for the machine and storage.</choice>
+      <choice correct="true"> 24 x 0.04040 + 24 x 50 x 0.00013 + 24 x 0.01010 = 1.24 EUR ... you pay for the machine, storage and license.</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution"><p>Have a look at answer 3, 3 like 3 parts to consider ...</p>
+</div>
+    </solution>
+  </choiceresponse>
+  <demandhint>
+    <hint>Machine. Disk. License. </hint>
+    <hint>If your calculation formular does not consist of 3 parts ... it might be wrong ;)</hint>
+  </demandhint>
+</problem>

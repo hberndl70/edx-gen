@@ -1,1 +1,0 @@
-python .\mob_uploader.py "./test/input"

@@ -1,7 +1,7 @@
 import sys, os
 from boto3 import Session
 from botocore.exceptions import BotoCoreError, ClientError
-from aws_cred import __AWS__
+from sos_cred import __SOS__ 
 import __SETTINGS__
 #--------------------------------------------------------------------------------------------------
 # get all the sub folders in a folder
@@ -57,8 +57,8 @@ def upload_s3(file_name, bucket, object_name=None, extra=None):
         object_name = file_name
 
     # Upload the file
-    session = Session(aws_access_key_id = __AWS__.ID,
-                      aws_secret_access_key=__AWS__.KEY)
+    session = Session(sos_access_key_id = __SOS__.ID,
+                      sos_secret_access_key=__SOS__.KEY)
     s3_client = session.client('s3')
     try:
         if extra == None:

@@ -10,7 +10,7 @@ There are two types of files:
   - Markdown files
   - Contains the settings for the parent folder.
   - Contains the content for the components that make up the units.
-- Assets (e.g. .jog, .png)
+- Assets (e.g. .jpg, .png)
   - Images can be .png and .jpg
   - The assets should be placed in the same folder where they are used, i.e. in the unit folder.
 

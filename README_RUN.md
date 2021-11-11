@@ -21,8 +21,8 @@ Markdown is processes using the python markdown module.
 
 The following extensions are used:
 - https://python-markdown.github.io/extensions/extra/
-  - https://python-markdown.github.io/extensions/fenced_code_blocks/
-  - https://python-markdown.github.io/extensions/tables/
+- https://python-markdown.github.io/extensions/fenced_code_blocks/
+- https://python-markdown.github.io/extensions/tables/
 
 extensions = ['extra', 'sane_lists']
 

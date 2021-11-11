@@ -8,7 +8,7 @@ if not os.path.exists(os.path.join(sys.argv[1], '__SETTINGS__.py')):
     raise Exception('Path does not contain __SETTINGS__.py: ' + sys.argv[1])
 sys.path.append(sys.argv[1])
 #--------------------------------------------------------------------------------------------------
-from edx_gen import  _util
+from edx_gen import _util
 import __SETTINGS__
 #--------------------------------------------------------------------------------------------------
 # Text strings

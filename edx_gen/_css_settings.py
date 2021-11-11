@@ -1,24 +1,21 @@
 #--------------------------------------------------------------------------------------------------
 # Settings for headings
 H3_CSS = ';'.join([
-    'font-size: 22px',
-    'font-weight: 400',
-    'font-style: normal',
-    'color: #474747'
+    'font-size: 20px',
+    'font-weight: 600',
+    'font-style: normal'
     ])
 
 H4_CSS = ';'.join([
-    'font-size: 20px',
-    'font-weight: 400',
-    'font-style: italic',
-    'color: #474747'
+    'font-size: 18px',
+    'font-weight: 600',
+    'font-style: normal'
     ])
 
 H5_CSS = ';'.join([
-    'font-size: 18px',
-    'font-weight: 400',
-    'text-decoration: underline',
-    'color: #474747'
+    'font-size: 16px',
+    'font-weight: 600',
+    'text-decoration: normal'
     ])
 
 #--------------------------------------------------------------------------------------------------
@@ -72,24 +69,16 @@ CODE_BOX_CSS = ';'.join([
     'display: block',
     'clear: both',
     'margin-bottom: 10px',
-    'border: 1px solid #000000',
-    'border-radius: 0px',
     'padding: 10px',
-    'width: 600px',
-    'background-color: #fafafa'
+    'width: 600px'
     ])
 
 CODE_LINE_CSS = ';'.join([
-    'font-size: 14px',
-    'font-weight: 600',
+    'font-size: 15px',
+    'font-weight: 400',
     'font-family:monospace',
     'margin: 2px',
-    'padding: 5px',
-    'border-left: 1px solid #999999',
-    'border-bottom: 1px solid #999999',
-    'border-top: 0px',
-    'border-right: 0px',
-    'border-radius: 0px'
+    'padding: 5px'
     ])
 #--------------------------------------------------------------------------------------------------
 # Settings for the language buttons
