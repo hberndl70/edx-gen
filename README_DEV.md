@@ -1,8 +1,9 @@
-# Creating Content For the Möbius MOOC Generator
+# Creating Content For the MOOC Generator
 
 In order to create the edx course, the instructors need to organise their files in a specific folder structure that is four levels deep. All other assets, such as images and videos, can be placed in context, in the same folder as where they are being used.
 
-The content is defined using markdown files with an .md extension. Here is a [markdown cheatsheet](https://devhints.io/markdown) that gives a quick overview of the things you can do.
+The content is defined using markdown files with an .md extension. 
+Here is a [markdown cheatsheet](https://devhints.io/markdown) that gives a quick overview of the things you can do.
 
 There are two types of files:
 
@@ -30,9 +31,9 @@ The folder structure is as follows:
 Note that each folder should contain exactly one markdown (.md) file. These files can have any name, but must always have a '.md' extension.
 
 You can explore an example input dataset here:
-- https://github.com/design-automation/edx-generator/tree/master/test/input
+https://github.com/hberndl70/mooc-generator/tree/master/test_academy/input
 
-Note that the alphanumeric ordering of the folders is important, as this will reflect the ordering that will be generated in edx. In this example, the sections'_w1' (for 'week 1'), '_w2' (for 'week 2'), etc will be sorted correctly. However, the subsections 'Intro', 'Shorts', and 'Assignment' would not be sorted correctly. So, for that reason, they have been named '01_Intro', '02_Shorts', and '03_Assignment'.
+Note that the alphanumeric ordering of the folders is important, as this will reflect the ordering that will be generated in edx. In this example, the sections'_sec1' (for 'Section 1').  Due to the subsection naming as followed 'sub1', 'sub2', and 'sub3' they would be sorted correctly. Alternatively '1_sub', '2_sub', and '3_sub' would work as well, so the file/folder name construction is important for the processing order.
 
 In the example, short folder names used. This is because when the final files get generated, the files names will concatenate all the folder names. So in order to avoid long file names in the final output, it is advisable to keep the folder names short. In addition, in the example, we start the filename with an '_' (underscore). This is to ensure that the markdown file will always be listed at the top of the file list. (But this is just a convenience, not a requirement.)
 
