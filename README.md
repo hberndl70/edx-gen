@@ -1,4 +1,4 @@
-# Möbius MOOC Generator
+# MOOC Generator
 
 A Python3 script for generating an edx course from markdown.
 
@@ -12,7 +12,7 @@ The basic workflow is that you create all your content locally, in a specific fo
 ## More Information
 
 For more information about creating the content for the Edx Generator:
-* [Creating content for the Möbius MOOC Generator](./README_DEV.md)
+* [Creating content for the MOOC Generator](./README_DEV.md)
 
 For more information about running the Edx Generator:
-* [Running the Möbius MOOC Generator](./README_RUN.md)
+* [Running the MOOC Generator](./README_RUN.md)
