@@ -11,23 +11,23 @@
 
 This Level 100 basic course for Exoscale focuses on Pricing only. It will help you learn the basics and the more sophisticated Exoscale Pricing topics and enable you to calculate product pricing for a given scenario and the whole scenario.
 
-**Overview**:
+#### Overview
 you learn about Exoscale pricing, the different products, the pricing list and the pricing calculator.
 
-**Prerequisites**:
+#### Prerequisites
 Exoscale Starter - EXO100
 
-**Length**:
+#### Length
 1 day
 
-**Timing**:
+#### Timing
 a time investment of approx. 1 day is needed to cover all the material.
 
-**Learning Objectives**:
+#### Learning Objectives
 enable you to calculate overall pricing for various usage scenarios of Exoscale products.
 
-**Learning Aid**:
+#### Learning Aid
 also, have a look at the <a href="https://community.exoscale.com/documentation/handbooks/academy-handbooks/" target="_blank">**Academy Handbooks**</a>  recommended for this course before you take the exam.
 
-**Certification**:
+#### Certification
 this course should prepare you to get certified on Exoscale Pricing - EXO100P.
