@@ -136,7 +136,7 @@ def main():
     # create the tar file
     [out_folder_path, out_folder_name] = os.path.split(sys.argv[2])
     tar_path = os.path.normpath(os.path.join(sys.argv[2], '..'))
-    tar_file_path = os.path.join(tar_path, __SETTINGS__.S3_MOOC_FOLDER + '.tar.gz')
+    tar_file_path = os.path.join(tar_path, __SETTINGS__.MOOC_FOLDER + '.tar.gz')
     tar = tarfile.open(tar_file_path, 'w:gz')
     os.chdir(out_folder_path)
     tar.add(out_folder_name, recursive=True)

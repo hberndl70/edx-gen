@@ -9,12 +9,8 @@
 __pycache__/
 
 ## User auth token
-__AWS__.py
 __GITHUB__.py
 
-#bat files
-*.bat
-
 ## Output data
-test/output/
+test_course/output/
 *.tar.gz

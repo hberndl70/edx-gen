@@ -27,7 +27,7 @@ a time investment of approx. 1 day is needed to cover all the material.
 enable you to calculate overall pricing for various usage scenarios of Exoscale products.
 
 #### Learning Aid
-also, have a look at the <a href="https://community.exoscale.com/documentation/handbooks/academy-handbooks/" target="_blank">**Academy Handbooks**</a>  recommended for this course before you take the exam.
+also, have a look at the <a href="https://community.exoscale.com/documentation/handbooks/academy-handbooks/" target="_blank">**Academy Handbooks**</a> recommended for this course before you take the exam.
 
 #### Certification
 this course should prepare you to get certified on Exoscale Pricing - EXO100P.

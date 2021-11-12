@@ -1,7 +1,4 @@
 import sys, os
-from boto3 import Session
-from botocore.exceptions import BotoCoreError, ClientError
-from sos_cred import __SOS__ 
 import __SETTINGS__
 #--------------------------------------------------------------------------------------------------
 # get all the sub folders in a folder
@@ -32,55 +29,12 @@ def getFiles(folder_path):
     return files
 
 #--------------------------------------------------------------------------------------------------
-
-# upload a file to the s3 answers bucket
-def upload_s3_answer(file_name, mob_filename):
-    s3_filename = __SETTINGS__.S3_MOOC_FOLDER + '/' + __SETTINGS__.S3_ANSWERS_FOLDER + '/' + mob_filename
-    upload_s3(file_name, __SETTINGS__.S3_BUCKET, s3_filename, {'ACL': 'private'})
-    
-# upload a file to the s3 examples bucket
-def upload_s3_example(file_name, mob_filename):
-    s3_filename = __SETTINGS__.S3_MOOC_FOLDER + '/' + __SETTINGS__.S3_EXAMPLES_FOLDER + '/' + mob_filename
-    upload_s3(file_name, __SETTINGS__.S3_BUCKET, s3_filename, {'ACL': 'public-read'})
-
-# upload a file to an s3 bucket
-def upload_s3(file_name, bucket, object_name=None, extra=None):
-    """Upload a file to an S3 bucket
-    :param file_name: File to upload
-    :param bucket: Bucket to upload to
-    :param object_name: S3 object name. If not specified then file_name is used
-    :return: True if file was uploaded, else False
-    """
-    print('---- Uploading:', object_name)
-    # If S3 object_name was not specified, use file_name
-    if object_name is None:
-        object_name = file_name
-
-    # Upload the file
-    session = Session(sos_access_key_id = __SOS__.ID,
-                      sos_secret_access_key=__SOS__.KEY)
-    s3_client = session.client('s3')
-    try:
-        if extra == None:
-            response = s3_client.upload_file(file_name, bucket, object_name)
-
-        else:
-            response = s3_client.upload_file(file_name, bucket, object_name, ExtraArgs=extra)
-
-    except ClientError as e:
-        print(e)
-        return False
-        
-    return True
-
-#--------------------------------------------------------------------------------------------------
 # check if the text starts with any of the strings in the list
 def starts(text, starts_list):
     for start in starts_list:
         if text.startswith(start):
             return True
     return False
-
 
 #--------------------------------------------------------------------------------------------------
 # check if the text ends with any of the strings in the list

@@ -3,7 +3,6 @@ from lxml import etree
 import urllib
 from edx_gen import  _edx_consts
 from edx_gen import  _css_settings
-from edx_gen import  _mob_iframe
 from edx_gen import  _util
 import __SETTINGS__
 #--------------------------------------------------------------------------------------------------
@@ -76,6 +75,7 @@ def _processCodeTags(code_tags):
             parent.replace(code_tag, div_tag)
         else:
             code_tag.set('style', _css_settings.CODE_INLINE_CSS)
+
 #--------------------------------------------------------------------------------------------------
 # process images
 def _processHtmlImgTags(component_path, img_tags, unit_filename):
@@ -150,30 +150,10 @@ def _processHtmlATags(component_path, a_tags, unit_filename):
             print(WARNING, 'An <a/> tag has no "href" attribute:', unit_filename)
             return
 
-        # create the new tag, either an <iframe/> or an image <a/>
-        if _util.ends(href, __SETTINGS__.MOB_EXAMPLE_FILENAMES):
-            _createMobIframeTag(a_tag, href, unit_filename)
-
-        # an answer! this should not happen
-        elif _util.ends(href, __SETTINGS__.MOB_ANSWER_FILENAMES):
-            print(WARNING, 'Found an answer being displayed to the learners:', unit_filename)
-
         # normal a tag
         else:
             _updateATag(a_tag, href, unit_filename)
 
-#--------------------------------------------------------------------------------------------------
-# create a mob Iframe tag
-def _createMobIframeTag(a_tag, href, unit_filename):
-
-    # create mobius iframe
-    mob_settings = dict([[item.strip() for item in pair.split('=')] for pair in a_tag.text.split(',')])
-
-    # create the iframe
-    new_iframe_tag = _mob_iframe.createMobIframe(href, mob_settings, unit_filename)
-
-    # replace the existing a with the new tag
-    a_tag.getparent().replace(a_tag, new_iframe_tag)
 
 # update the href in an <a href=''></a> tag
 def _updateATag(a_tag, href, unit_filename):
@@ -181,15 +161,6 @@ def _updateATag(a_tag, href, unit_filename):
     # ends with /, so must be a url like http://google.com/
     # do nothing
     if href.endswith('/'):
-        return
-
-    # a mob file that is a copy, i.e. a file for the learner to download
-    elif href.endswith('copy.mob'):
-        return
-
-    # a mob file with a bad extension
-    elif href.endswith('.mob'):
-        print(WARNING, 'Found a .mob file with a bad filename:', href, unit_filename)
         return
 
     # break down the url
