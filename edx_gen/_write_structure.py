@@ -6,6 +6,7 @@ from edx_gen import  _read_metadata
 from edx_gen import  _markdown
 from edx_gen import  _util
 import __SETTINGS__
+
 #--------------------------------------------------------------------------------------------------
 # Text strings
 WARNING = "      WARNING:"

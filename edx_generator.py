@@ -1,6 +1,7 @@
 import sys, os
 #--------------------------------------------------------------------------------------------------
 print("\n\n\n\n=========================================================\n\n\n\n")
+
 if len(sys.argv) != 3:
     print(sys.argv)
     raise Exception('Usage: python ./edx_generator.py input_path output_path')
@@ -11,6 +12,7 @@ if not os.path.exists(os.path.join(sys.argv[1], '__SETTINGS__.py')):
 if not os.path.exists(sys.argv[2]):
     raise Exception('Path does not exist: ' + sys.argv[2])
 sys.path.append(sys.argv[1])
+
 #--------------------------------------------------------------------------------------------------
 import tarfile
 import shutil
