@@ -9,12 +9,8 @@ import __SETTINGS__
 #--------------------------------------------------------------------------------------------------
 ALL_LANGUAGES = {
     'en': 'English',
-    'zh': 'Mandarin',
-    'pt': 'Portuguese',
     'fr': 'French',
-    'es': 'Spanish',
-    'de': 'German',
-    'nl': 'Dutch'
+    'de': 'German'
 } 
 #--------------------------------------------------------------------------------------------------
 WARNING = "      WARNING:"
@@ -165,8 +161,9 @@ def addVideoXML(video_tag, video_asset_tag, component_path, settings, unit_filen
     
     url_base = __SETTINGS__.S3_LINKS_URL + __SETTINGS__.S3_MOOC_FOLDER + '/' + __SETTINGS__.S3_VIDEOS_FOLDER + '/'
     for lang in __SETTINGS__.LANGUAGES:
-        video_urls[lang] = url_base  + video_filename + '_' + lang + '.' + video_ext
-
+        # orig code: video_urls[lang] = url_base  + video_filename + '_' + lang + '.' + video_ext
+        video_urls[lang] = url_base  + video_filename + '.' + video_ext
+        
     video_url_default = video_urls['en']
     if video_url_default == None:
         video_url_default = video_urls[video_urls.keys()[0]]

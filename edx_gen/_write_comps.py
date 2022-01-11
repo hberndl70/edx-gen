@@ -8,7 +8,7 @@ from edx_gen import  _write_comps
 from edx_gen import  _write_comp_html
 from edx_gen import  _write_comp_checkboxes
 from edx_gen import  _write_comp_multiplechoice
-from edx_gen import  _write_comp_submit
+# from edx_gen import  _write_comp_submit
 from edx_gen import  _write_comp_video
 from edx_gen import  _xml_final_proj
 from edx_gen import  _xml_google_doc
@@ -144,26 +144,26 @@ def _writeFilesForSnippet(md_filepath, comp_filename, tree_snippet, unit_filenam
         return _write_comp_multiplechoice.writeXmlForProbMultiplechoiceComp(
             md_filepath, comp_filename, tree_snippet, settings, unit_filename)
 
-    elif comp_type == 'problem-submit':
-        print("    |_ PROBLEM SUBMIT")
-
-        # get the setting out of the meta_tag
-        settings = _read_metadata.getMetaSettings(md_filepath, meta_tag, 
-            _edx_consts.COMP_PROB_SUBMIT_REQ , _edx_consts.COMP_PROB_SUBMIT_OPT )
-
-        # check that we have settings
-        if not settings:
-            print(WARNING, 'There seem to be no settings for this "problem-submit" component:', md_filepath)
-            return
-
-        # remove h1 meta_tag from the tree so it does not end up in the output
-        tree_snippet.remove(meta_tag)
-
-        # write .xml file to COMP_HTML_FOLDER
-        # write .xml file to COMP_PROBS_FOLDER
-        # return the list of files
-        return _write_comp_submit.writeXmlForSubmitComp(
-            md_filepath, comp_filename, tree_snippet, settings, unit_filename)
+#    elif comp_type == 'problem-submit':
+#        print("    |_ PROBLEM SUBMIT")
+#
+#        # get the setting out of the meta_tag
+#        settings = _read_metadata.getMetaSettings(md_filepath, meta_tag, 
+#            _edx_consts.COMP_PROB_SUBMIT_REQ , _edx_consts.COMP_PROB_SUBMIT_OPT )
+#
+#        # check that we have settings
+#        if not settings:
+#            print(WARNING, 'There seem to be no settings for this "problem-submit" component:', md_filepath)
+#            return
+#
+#        # remove h1 meta_tag from the tree so it does not end up in the output
+#        tree_snippet.remove(meta_tag)
+#
+#        # write .xml file to COMP_HTML_FOLDER
+#        # write .xml file to COMP_PROBS_FOLDER
+#        # return the list of files
+#        return _write_comp_submit.writeXmlForSubmitComp(
+#            md_filepath, comp_filename, tree_snippet, settings, unit_filename)
     
     elif comp_type == 'video':
         print("    |_ VIDEO COMP")
