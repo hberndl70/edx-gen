@@ -19,7 +19,8 @@ The video below gives you a glance at the user interface of these IaaS cloud ser
 {:
     type="video"
     display_name="Welcome Video"
-    show_captions="false"
     video_filename="exoscale_intro.mp4"
+    show_captions="false"
+    download_video="false"
 }
 

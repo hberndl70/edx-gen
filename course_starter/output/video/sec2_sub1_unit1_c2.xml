@@ -1,4 +1,4 @@
-<video url_name="sec2_sub1_unit1_c2" display_name="Welcome Video" show_captions="false" youtube_id_1_0="" transcripts="{&quot;en&quot;:&quot;sec2_sub1_unit1_exoscale_intro_sub_en.srt&quot;}" html5_sources="[&quot;https://sos-de-fra-1.exo.io/exoscale-academy/videos/exoscale_intro.mp4&quot;]">
+<video url_name="sec2_sub1_unit1_c2" display_name="Welcome Video" download_video="false" show_captions="false" youtube_id_1_0="" transcripts="{&quot;en&quot;:&quot;sec2_sub1_unit1_exoscale_intro_sub_en.srt&quot;}" html5_sources="[&quot;https://sos-de-fra-1.exo.io/exoscale-academy/videos/exoscale_intro.mp4&quot;]">
   <video_asset client_video_id="external video" duration="0.0" image="">
     <transcripts>
       <transcript file_format="srt" language_code="en" provider="Custom"/>

@@ -16,10 +16,6 @@ Possible values of 'type' are as follows:
 - `type="video"`
 - `type="problem-submit"`
 - `type="problem-checkboxes"`
-- `type="problem-choice"` (not supported at this time)
-- `type="problem-dropdown"` (not supported at this time)
-- `type="problem-numerical"` (not supported at this time)
-- `type="problem-text"` (not supported at this time)
 
 At the moment, for problems, only 'problem-submit' and 'problem-checkboxes' are implemented.
 - problem-submit: A problem where the learner needs to submit a file that will be uploade to the edx server and graded with an external grader. 
