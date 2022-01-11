@@ -3,61 +3,64 @@ from lxml import etree
 from edx_gen import  _edx_consts
 from edx_gen import  _process_html
 from edx_gen import  _css_settings
+# from edx_gen import  _mob_iframe
 from edx_gen import  _write_comp_util
 import __SETTINGS__
 
 #--------------------------------------------------------------------------------------------------
 WARNING = "      WARNING:"
 
-MULTIPLECHOICE_INSTRUCTIONS = [
-    'Please select one option from the list below. '][0]
+CHECKBOXES_INSTRUCTIONS = [
+    'Please select all applicable options from the list below. ' + 
+    'Multiple selections are allowed.'][0]
 
 #--------------------------------------------------------------------------------------------------
 # write xml for problem Checkboxescomponent
-def writeXmlForProbMultiplechoiceComp(component_path, filename, content, settings, unit_filename):
+def writeXmlForProbCheckboxesComp(component_path, filename, content, settings, unit_filename):
 
     # ----  ----  ----
     # <problem 
-    #   display_name="Q1"  
-    #   max_attempts="3" 
-    #   rerandomize="onreset" 
-    #   weight="1.8"
-    #   showanswer="attempted" 
-    #   attempts_before_showanswer_button="3" 
+    #   display_name="Q2" 
+    #   max_attempts="2" 
+    #   rerandomize="always" 
+    #   weight="1.0"
     # >
-    # 	<multiplechoiceresponse>
-    # 		<p>You can use this template as a guide to the simple editor markdown and OLX markup to use for multiple choice with hints and feedback problems. Edit this component to replace this template with your own assessment.</p>
-    # 		<label>Add the question text, or prompt, here. This text is required.</label>
-    # 		<description>Please select one option from the list below.</description>
-    # 		<choicegroup type="MultipleChoice">
-    # 			<choice correct="false">
-    #               an incorrect answer 
-    #               <choicehint>You can specify optional feedback like this, which appears after this answer is submitted.</choicehint>
-    # 		    </choice>
-    # 			<choice correct="true">
-    #               the correct answer
+    #   <choiceresponse>
+    #       <label>xxx, which of the following are true?</label>
+    #       <description>Please select all applicable options from the list below. Multiple selections are allowed. </description>
+    #       <checkboxgroup>
+    #           <choice correct="false">
+    #               Some text. 
+    #               <choicehint selected="true">Feedback.</choicehint>
     #           </choice>
-    # 			<choice correct="false">
-    #               an incorrect answer 
-    #               <choicehint>You can specify optional feedback for none, a subset, or all of the answers.</choicehint>
-    # 		    </choice>
-    # 		</choicegroup>
-    # 	</multiplechoiceresponse>
-    # 	<demandhint>
-    # 	  <hint>You can add an optional hint like this. Problems that have a hint include a hint button, and this text appears the first time learners select the button.</hint>
-    # 	  <hint>If you add more than one hint, a different hint appears each time learners select the hint button.</hint>
-    # 	</demandhint>
+    #           <choice correct="false">
+    #               Some text. 
+    #               <choicehint selected="true">Feedback.</choicehint>
+    #           </choice>
+    #           <choice correct="true">Some text. </choice>
+    #       </checkboxgroup>
+    #       <solution>
+    #           <div class="detailed-solution">
+    #               <p>Explanation</p>
+    #               <p>xxx</p>
+    #           </div>
+    #       </solution>
+    #       <demandhint>
+    #           <hint>Hint.</hint>
+    #           <hint>Another hint.</hint>
+    #       </demandhint>
+    #   </choiceresponse>
     # </problem>
     # ----  ----  ----
 
     # make the xml
     problem_tag = etree.Element("problem") 
-    multiplechoiceresponse_tag = etree.Element("multiplechoiceresponse")
-    problem_tag.append( multiplechoiceresponse_tag )
+    choiceresponse_tag = etree.Element("choiceresponse")
+    problem_tag.append( choiceresponse_tag )
 
     # process the settings
     for key in settings:
-        if key not in ['type', 'id', 'verified_only']:
+        if key not in ['type', 'verified_only', 'id']:
             problem_tag.set(key, settings[key])
 
     # verified_only
@@ -90,42 +93,42 @@ def writeXmlForProbMultiplechoiceComp(component_path, filename, content, setting
                 else:
                     _write_comp_util.addHintTag(hints, elem, filename)
     else:
-        print(WARNING, 'Multiplechoice problem is missing content.', filename)
+        print(WARNING, 'Checkboxes problem is missing content.', filename)
 
     # add labels
     if labels:
         label_tag = etree.Element("label") 
-        multiplechoiceresponse_tag.append(label_tag)
+        choiceresponse_tag.append(label_tag)
         for label in labels:
             label_tag.append(label)
     else:
-        print(WARNING, 'Multiplechoice problem seems to have no text that describes the question.', filename)
-    
+        print(WARNING, 'Checkboxes problem seems to have no text that describes the question.', filename)
+
     # add instructions
     description_tag = etree.Element("description")
-    multiplechoiceresponse_tag.append(description_tag)
-    description_tag.text = MULTIPLECHOICE_INSTRUCTIONS
+    choiceresponse_tag.append(description_tag)
+    description_tag.text = CHECKBOXES_INSTRUCTIONS
 
     # add choices
     if choices:
-        choicegroup_tag = etree.Element("choicegroup")
-        multiplechoiceresponse_tag.append(choicegroup_tag)
+        checkboxgroup_tag = etree.Element("checkboxgroup")
+        choiceresponse_tag.append(checkboxgroup_tag)
         for choice in choices:
-            choicegroup_tag.append(choice)
+            checkboxgroup_tag.append(choice)
     else:
-        print(WARNING, 'Multiplechoice problem seems to have no choices.', filename)
+        print(WARNING, 'Checkboxes problem seems to have no choices.', filename)
 
     # add solutions
     if solutions:
         solution_tag = etree.Element("solution")
         div_tag = etree.Element("div")
         div_tag.set('class', 'detailed-solution')
-        multiplechoiceresponse_tag.append(solution_tag)
+        choiceresponse_tag.append(solution_tag)
         solution_tag.append(div_tag)
         for solution in solutions:
             div_tag.append(solution)
     else:
-        pass # It is ok to have no solution
+        pass # It is ok to have no solution text
 
     # add hints
     if hints:

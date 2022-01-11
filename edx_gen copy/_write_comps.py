@@ -8,6 +8,7 @@ from edx_gen import  _write_comps
 from edx_gen import  _write_comp_html
 from edx_gen import  _write_comp_checkboxes
 from edx_gen import  _write_comp_multiplechoice
+# from edx_gen import  _write_comp_submit
 from edx_gen import  _write_comp_video
 from edx_gen import  _xml_final_proj
 from edx_gen import  _xml_google_doc
