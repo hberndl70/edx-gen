@@ -1,77 +1,66 @@
 # UNIT ==========
 {:
-  display_name="Try Out"
+  display_name="Knowledge Check"
 }
-
-# COMPONENT ==========
-{:
-  type="html"
-  display_name="Try it before you start!"
-}
-
-This is how a multiple-choice knowledge-check question will look like. The purpose of this try out section is to show how correct and incorrect answered questions are viewed. So, yes you should answer the second question incorrect to see the difference ;).
 
 
 # COMPONENT ==========
 {:
     type="problem-checkboxes"
-    display_name="Try Out - Questions Correct"
+    display_name="Knowledge Check - Basic 1"
     max_attempts="3"
     rerandomize="always"
     weight="1.0"
 }
 
-
-Please mark all *correct answer* items below, to see how a *correct* answered question respond and to get a feeling for the knowledge-check environment.
-
-===
-
-[x] a correct answer
-
-[ ] an incorrect answer
-
-[x] another correct answer
-
-[x] yet another correct answer
+What are the three general IaaS scenarios, we discussed?
 
 ===
 
-It shouldn't be that hard, answers which contain the word *correct* have to be clicked.
+[ ] Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create
+
+[X] Lift &amp; Shift, Improve &amp; Move, Design &amp; Build
+
+[ ] Look &amp; Change, Increase &amp; Move, Architect &amp; Build
 
 ===
 
-Don't click the answers that contain the word *incorrect*.
+It's tricky I know, but if you can't remember just go back and have a peek ;)
+
+===
+
+Build, Lift, Move, Design, Improve, Shift ... all these are in the right answer ;)
 
 
 # COMPONENT ==========
 {:
     type="problem-checkboxes"
-    display_name="Try Out - Questions Incorrect"
+    display_name="Knowledge Check - Basic 2"
     max_attempts="3"
     rerandomize="always"
     weight="1.0"
 }
 
-
-Please mark all *incorrect answer* items below, to see how an *incorrect* answered question respond and to view the impact on grading.
-
-===
-
-[x] a correct answer
-
-[ ] an incorrect answer
-
-[x] another correct answer
-
-[ ] yet another incorrect answer
+What are the four pillars of cloud-native, we discussed?
 
 ===
 
-This is the reversed exercise from above, find the anwers that include the word *incorrect* and click them.
+[ ] ImpOps, Continuous Delivery, Virtual Server, Microservices
+
+[ ] DevSecOps, Continuous Implmentation, Virtual Machines, Microserver
+
+[X] DevOps, Continuous Delivery, Container, Microservices 
+
+[ ] DevOps, Continous Deployment, Container, Monolithic Services
 
 ===
 
-Don't click the answers that contain the word *correct*.
+It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic, you are not sure, have a peek ... 
+
+===
+
+In alphabetical order ... Container, Continous Delivery, DevOps, Microservices ... familiar ?
+
 
 
 
