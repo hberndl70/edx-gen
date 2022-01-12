@@ -4,8 +4,9 @@
 </label>
     <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
     <checkboxgroup>
-      <choice correct="false"> Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create</choice>
-      <choice correct="false"> Look &amp; Change, Increase &amp; Move, Architect &amp; Build</choice>
+      <choice correct="false"> Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create
+[X] Lift &amp; Shift, Improve &amp; Move, Design &amp; Build
+[ ] Look &amp; Change, Increase &amp; Move, Architect &amp; Build</choice>
     </checkboxgroup>
     <solution>
       <div class="detailed-solution"><p>It's tricky I know, but if you can't remember just go back and have a peek ;)</p>

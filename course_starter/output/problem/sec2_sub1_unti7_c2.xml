@@ -4,9 +4,10 @@
 </label>
     <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
     <checkboxgroup>
-      <choice correct="false"> ImpOps, Continuous Delivery, Virtual Server, Microservices</choice>
-      <choice correct="false"> DevSecOps, Continuous Implmentation, Virtual Machines, Microserver</choice>
-      <choice correct="false"> DevOps, Continous Deployment, Container, Monolithic Services</choice>
+      <choice correct="false"> ImpOps, Continuous Delivery, Virtual Server, Microservices
+[ ] DevSecOps, Continuous Implmentation, Virtual Machines, Microserver
+[X] DevOps, Continuous Delivery, Container, Microservices 
+[ ] DevOps, Continous Deployment, Container, Monolithic Services</choice>
     </checkboxgroup>
     <solution>
       <div class="detailed-solution"><p>It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic, you are not sure, have a peek ... </p>
