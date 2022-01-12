@@ -1,20 +1,19 @@
-<problem display_name="Try Out - Questions Correct" max_attempts="3" weight="1.0" rerandomize="always">
+<problem display_name="Knowledge Check - Basic 2" max_attempts="3" weight="1.0" rerandomize="always">
   <choiceresponse>
-    <label><p>Please mark all <em>correct answer</em> items below, to see how a <em>correct</em> answered question respond and to get a feeling for the knowledge-check environment.</p>
+    <label><p>What are the four pillars of cloud-native, we discussed?</p>
 </label>
     <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
     <checkboxgroup>
-      <choice correct="true"> a correct answer</choice>
-      <choice correct="false"> an incorrect answer</choice>
-      <choice correct="true"> another correct answer</choice>
-      <choice correct="true"> yet another correct answer</choice>
+      <choice correct="false"> ImpOps, Continuous Delivery, Virtual Server, Microservices</choice>
+      <choice correct="false"> DevSecOps, Continuous Implmentation, Virtual Machines, Microserver</choice>
+      <choice correct="false"> DevOps, Continous Deployment, Container, Monolithic Services</choice>
     </checkboxgroup>
     <solution>
-      <div class="detailed-solution"><p>It shouldn't be that hard, answers which contain the word <em>correct</em> have to be clicked.</p>
+      <div class="detailed-solution"><p>It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic, you are not sure, have a peek ... </p>
 </div>
     </solution>
   </choiceresponse>
   <demandhint>
-    <hint>Don't click the answers that contain the word </hint>
+    <hint>In alphabetical order ... Container, Continous Delivery, DevOps, Microservices ... familiar ?</hint>
   </demandhint>
 </problem>

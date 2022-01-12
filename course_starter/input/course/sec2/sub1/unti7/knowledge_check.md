@@ -18,9 +18,7 @@ What are the three general IaaS scenarios, we discussed?
 ===
 
 [ ] Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create
-
 [X] Lift &amp; Shift, Improve &amp; Move, Design &amp; Build
-
 [ ] Look &amp; Change, Increase &amp; Move, Architect &amp; Build
 
 ===
@@ -46,11 +44,8 @@ What are the four pillars of cloud-native, we discussed?
 ===
 
 [ ] ImpOps, Continuous Delivery, Virtual Server, Microservices
-
 [ ] DevSecOps, Continuous Implmentation, Virtual Machines, Microserver
-
 [X] DevOps, Continuous Delivery, Container, Microservices 
-
 [ ] DevOps, Continous Deployment, Container, Monolithic Services
 
 ===
