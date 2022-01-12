@@ -1,21 +1,16 @@
 # UNIT ==========
 {:
-  display_name="Attention"
+  display_name="What does Iaas mean?"
 }
 
 # COMPONENT ==========
 {:
   type="html"
-  display_name="Keep attention to ..."
+  display_name="Find the meaning, do your research!"
 }
 
-### ... how to get the most out of it!
+Infrastructure as a Service (IaaS) is an instant computing infrastructure provisioned and managed over the internet. It's one of the three basic types of cloud service models, along with Platform as a Service (PaaS) and Software as a Service (SaaS). 
 
-Here you get quick guidance and tips on taking the course and on how to operate the system.
+Comparisons, analogies, visualizations, and more can be found, so there is a solution to understand the cloud computing models for every need.
 
-* Read the prepared and **structured content**.
-* Benefit from the modularised content and the **possibility to self-pace** your learning.
-* Watch provided **videos**, and re-watch them if necessary; they convey the most critical topics.
-* Take the **knowledge check** at the end of each section, it should help you embrace the essentials.
-* Checkout the <a href="https://community.exoscale.com/documentation/handbooks/academy-handbooks/" target="_blank">**Academy Handbooks**</a> for additional insights.
-* You can always check how you are doing in course **Progress**.
+Just do some research on your own to find a different explanation or visualization. Sounds complicated, it isn't. Do a Google search (or use your preferred search engine) to look into the vast repository of explanations on the internet.

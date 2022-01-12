@@ -1,21 +1,14 @@
 # UNIT ==========
 {:
-  display_name="Before You Begin"
+  display_name="What is IaaS?"
 }
 
 # COMPONENT ==========
 {:
   type="html"
-  display_name="Welcome to the Pricing Course"
+  display_name="IaaS - Cloud Service Model"
 }
 
-We recommend that you review the Course Syllabus before jumping into the content.
-It provides structured information related to the course, including:
+IaaS stands for **I**nfrastructure **a**s **a** **S**ervice and is the cloud computing service model for control freaks ;)
 
-* Overview
-* Prerequisites
-* Length
-* Timing
-* Learning Objectives
-* Learning Aids
-* Certification
+With the IaaS service model, you influence how you use cloud computing and configure your infrastructure compared to the other central cloud service models, Platform as a Service (PaaS) and Software as a Service (SaaS). IaaS comprises a collection of physical and virtualized resources that provide you with the basic building blocks needed to run applications and workloads in the cloud.
