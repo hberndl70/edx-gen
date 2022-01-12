@@ -24,11 +24,11 @@ What are the three general IaaS scenarios, we discussed?
 
 ===
 
-[ ] Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create
+[ ] Lift & Change, Improve & Optimise, Design & Create
 
-[x] Lift &amp; Shift, Improve &amp; Move, Design &amp; Build
+[x] Lift & Shift, Improve & Move, Design & Build
 
-[ ] Look &amp; Change, Increase &amp; Move, Architect &amp; Build
+[ ] Look &Change, Increase & Move, Architect & Build
 
 ===
 
@@ -36,7 +36,7 @@ It's tricky I know, but if you can't remember just go back and have a peek ;)
 
 ===
 
-Improve &amp; Move is part of the right answer ...
+Improve & Move is part of the right answer ...
 
 Build, Lift, Move, Design, Improve, Shift ... all these are in the right answer ;)
 
