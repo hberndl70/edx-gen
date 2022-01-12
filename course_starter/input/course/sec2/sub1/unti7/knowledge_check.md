@@ -9,7 +9,7 @@
   display_name="Check Your Knowledge"
 }
 
-This knowledge check section gives you the opportunity to review your education progress, it's not a test or an exam it is a location determination in your learning journey. Give it a try ;) ...
+This knowledge check section allows you to review your educational progress. It's not a test or an exam. It is a location determination in your learning journey. Give it a try ;)
 
 # COMPONENT ==========
 {:
@@ -35,6 +35,8 @@ What are the three general IaaS scenarios, we discussed?
 It's tricky I know, but if you can't remember just go back and have a peek ;)
 
 ===
+
+Improve &amp; Move is part of the right answer ...
 
 Build, Lift, Move, Design, Improve, Shift ... all these are in the right answer ;)
 

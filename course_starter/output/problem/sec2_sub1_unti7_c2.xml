@@ -1,20 +1,19 @@
-<problem display_name="Knowledge Check - Basic 2" max_attempts="3" weight="1.0" rerandomize="always">
+<problem display_name="Knowledge Check - Basic 1" max_attempts="3" weight="1.0" rerandomize="always">
   <choiceresponse>
-    <label><p>What are the four pillars of cloud-native, we discussed?</p>
+    <label><p>What are the three general IaaS scenarios, we discussed?</p>
 </label>
     <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
     <checkboxgroup>
-      <choice correct="false"> ImpOps, Continuous Delivery, Virtual Server, Microservices
-[ ] DevSecOps, Continuous Implmentation, Virtual Machines, Microserver
-[X] DevOps, Continuous Delivery, Container, Microservices 
-[ ] DevOps, Continous Deployment, Container, Monolithic Services</choice>
+      <choice correct="false"> Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create</choice>
+      <choice correct="true"> Lift &amp; Shift, Improve &amp; Move, Design &amp; Build</choice>
+      <choice correct="false"> Look &amp; Change, Increase &amp; Move, Architect &amp; Build</choice>
     </checkboxgroup>
     <solution>
-      <div class="detailed-solution"><p>It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic, you are not sure, have a peek ... </p>
+      <div class="detailed-solution"><p>It's tricky I know, but if you can't remember just go back and have a peek ;)</p>
 </div>
     </solution>
   </choiceresponse>
   <demandhint>
-    <hint>In alphabetical order ... Container, Continous Delivery, DevOps, Microservices ... familiar ?</hint>
+    <hint>Build, Lift, Move, Design, Improve, Shift ... all these are in the right answer ;)</hint>
   </demandhint>
 </problem>
