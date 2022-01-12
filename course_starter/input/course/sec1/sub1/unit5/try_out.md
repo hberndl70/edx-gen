@@ -21,7 +21,6 @@ This is how a multiple-choice knowledge-check question will look like. The purpo
     weight="1.0"
 }
 
-
 Please mark all *correct answer* items below, to see how a *correct* answered question respond and to get a feeling for the knowledge-check environment.
 
 ===
@@ -51,7 +50,6 @@ Don't click the answers that contain the word *incorrect*.
     rerandomize="always"
     weight="1.0"
 }
-
 
 Please mark all *incorrect answer* items below, to see how an *incorrect* answered question respond and to view the impact on grading.
 
