@@ -10,11 +10,12 @@
       <choice correct="false"> DevOps, Continous Deployment, Container, Monolithic Services</choice>
     </checkboxgroup>
     <solution>
-      <div class="detailed-solution"><p>It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic, you are not sure, have a peek ... </p>
+      <div class="detailed-solution"><p>It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic.</p>
 </div>
     </solution>
   </choiceresponse>
   <demandhint>
+    <hint>It's not the ones from the movie "Dead Poets Society" ...  </hint>
     <hint>In alphabetical order ... Container, Continous Delivery, DevOps, Microservices ... familiar ?</hint>
   </demandhint>
 </problem>

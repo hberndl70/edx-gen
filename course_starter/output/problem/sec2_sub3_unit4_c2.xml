@@ -1,0 +1,24 @@
+<problem display_name="Knowledge Check - Compute 1" max_attempts="3" weight="1.0" rerandomize="always">
+  <choiceresponse>
+    <label><p>On which industries Exoscale services are focused?</p>
+</label>
+    <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
+    <checkboxgroup>
+      <choice correct="false"> Transport</choice>
+      <choice correct="false"> Banking</choice>
+      <choice correct="false"> Automotive</choice>
+      <choice correct="false"> Government</choice>
+      <choice correct="false"> Manufacturing</choice>
+      <choice correct="false"> Software Engineering</choice>
+      <choice correct="true"> universal services, no industry focus</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution"><p>Infrstructure is a broad topic we focus on everything ;)</p>
+</div>
+    </solution>
+  </choiceresponse>
+  <demandhint>
+    <hint>It's more than you probably think ...</hint>
+    <hint>Beeing universal is another kind of focus ...</hint>
+  </demandhint>
+</problem>

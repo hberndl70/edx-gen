@@ -6,7 +6,7 @@
     <checkboxgroup>
       <choice correct="false"> Lift &amp; Change, Improve &amp; Optimise, Design &amp; Create</choice>
       <choice correct="true"> Lift &amp; Shift, Improve &amp; Move, Design &amp; Build</choice>
-      <choice correct="false"> Look &amp;Change, Increase &amp; Move, Architect &amp; Build</choice>
+      <choice correct="false"> Look &amp; Change, Increase &amp; Move, Architect &amp; Build</choice>
     </checkboxgroup>
     <solution>
       <div class="detailed-solution"><p>It's tricky I know, but if you can't remember just go back and have a peek ;)</p>
