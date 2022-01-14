@@ -6,28 +6,8 @@
 # COMPONENT ==========
 {:
   type="html"
-  display_name="A typical web application"
+  display_name="World Wide Infrastructure Spendings"
 }
 
-Our example architecture consists of the following explained components,  and it demonstrates the practical usage of several products together and the associated costs. 
+The IDC figures show clearly that the infrastructure game is changing. Even though there are still markets out there where cloud adoption is low and slow, there is a clear trend visible that public cloud will be a significant part of IT infrastructure. Hence, Exoscal IaaS is part of the infrastructure mix from now on, especially for cloud-native workloads and all types of modern apps. 
 
-**Application Servers**
-run the web application. The application reads from the DB servers via the Elastic IP v2, and users access this web service via another Elastic IP v2 that distributes traffic evenly among them. Upload user files to the Public File Bucket. Installed in an Anti-Affinity group.
-
-**Database Server**
-operate a shared database (*MySQL, MongoDB, etc.*) that is capable of replicating data. Installed in an anti-affinity group to ensure that the individual components are never on the same physical host. 
-
-**Backup Server**
-responsible for reading the data and uploading it to the Backup Bucket object storage. 
-
-**Public File Bucket**
-stores and publishes user files, such as profile pictures, and makes them publicly available.
-
-**Backup Bucket** 
-holds the backups of the DB servers and the Public File Bucket.
-
-**Elastic IP**
-in v2 is used as a simple load balancer in this scenario that distributes traffic evenly.
-
-**Exoscale DNS**
-responsible for resolving the service domain name (*example.com*).
