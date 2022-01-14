@@ -3,6 +3,7 @@
   display_name="Knowledge Check"
 }
 
+
 # COMPONENT ==========
 {:
   type="html"
@@ -10,6 +11,7 @@
 }
 
 This knowledge check section allows you to review your educational progress. It's not a test or an exam. It is a location determination in your learning journey. Give it a try ;)
+
 
 # COMPONENT ==========
 {:
@@ -28,7 +30,7 @@ What are the three general IaaS scenarios, we discussed?
 
 [x] Lift & Shift, Improve & Move, Design & Build
 
-[ ] Look &Change, Increase & Move, Architect & Build
+[ ] Look & Change, Increase & Move, Architect & Build
 
 ===
 
@@ -64,9 +66,11 @@ What are the four pillars of cloud-native, we discussed?
 
 ===
 
-It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic, you are not sure, have a peek ... 
+It's remembering names, ... I know, I hate it as well, but it is important to talk about this topic.
 
 ===
+
+It's not the ones from the movie "Dead Poets Society" ...  
 
 In alphabetical order ... Container, Continous Delivery, DevOps, Microservices ... familiar ?
 
