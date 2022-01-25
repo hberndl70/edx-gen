@@ -1,0 +1,20 @@
+<problem display_name="Knowledge Check - Storage 2" max_attempts="3" weight="1.0" rerandomize="always">
+  <choiceresponse>
+    <label><p>Which of the following is true about Exoscale?</p>
+</label>
+    <description>Please select all applicable options from the list below. Multiple selections are allowed.</description>
+    <checkboxgroup>
+      <choice correct="true"> Services are delivered exclusively out of Europe</choice>
+      <choice correct="true"> No Vendor Lock-In due to focus on open-source technology</choice>
+      <choice correct="true"> Pricing model is competetive and transparant</choice>
+    </checkboxgroup>
+    <solution>
+      <div class="detailed-solution"><p>Sometimes everythin is correct ;)</p>
+</div>
+    </solution>
+  </choiceresponse>
+  <demandhint>
+    <hint>I think here is more true than you think ...</hint>
+    <hint>All in ... all of the following is ... ;)</hint>
+  </demandhint>
+</problem>

@@ -27,21 +27,21 @@ FIGURE_CSS = ';'.join([
     ])
 
 FIGCAPTION_CSS = ';'.join([
-    'width:400px',
+    #'width:400px',
     # 'display:block',
     # 'margin-left:auto',
     # 'margin-right:auto',
     'margin-top:8px',
-    'text-align:left',
+    'text-align:right',
     'font-style:italic'
     ])
 
 IMAGE_MODAL_CSS = ';'.join([
-    'width:400px',
+    #'width:400px',
     # 'display:block',
     # 'margin-left:auto',
     # 'margin-right:auto',
-    'border-style:solid',
+    'border-style:none',
     'border-width:1px'
     ])
 
@@ -49,8 +49,8 @@ IMAGE_CSS = ';'.join([
     # 'display:block',
     # 'margin-left:auto',
     # 'margin-right:auto',
-    'max-width:100%',
-    'border-style:solid',
+    # 'max-width:100%',
+    'border-style:none',
     'border-width:1px'
     ])
 
@@ -80,6 +80,7 @@ CODE_LINE_CSS = ';'.join([
     'margin: 2px',
     'padding: 5px'
     ])
+    
 #--------------------------------------------------------------------------------------------------
 # Settings for the language buttons
 # These are the buttons that appear under each video
@@ -102,24 +103,3 @@ function myFunction(lang) {
   }
 }
 '''
-#--------------------------------------------------------------------------------------------------
-# Settings for Mobius Iframes
-# These are the embedded Mobius models
-
-MOB_IFRAME_WIDTH = '100%'
-MOB_IFRAME_HEIGHT ='600px'
-
-MOB_MINI_IFRAME_WIDTH = '80%'
-MOB_MINI_IFRAME_HEIGHT ='400px'
-
-MOB_IFRAME_STYLE = ';'.join([
-    # 'display:block',
-    # 'margin-left:auto',
-    # 'margin-right:auto',
-    'border-style:solid',
-    'border-width:4px',
-    'border-color:#065683'
-    ])
-
-
-#--------------------------------------------------------------------------------------------------

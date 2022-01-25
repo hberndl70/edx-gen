@@ -14,5 +14,7 @@
 * Transparent and Competitive Pricing Model
 
 Exoscale a platform for ...
-Value Prop
+
+![](Value_Prop.png)
+
 ... and many more.
