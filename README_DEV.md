@@ -1,4 +1,4 @@
-# Creating Content For the MOOC Generator
+# Creating Content For the edX Generator
 
 In order to create the edx course, the instructors need to organise their files in a specific folder structure that is four levels deep. All other assets, such as images and videos, can be placed in context, in the same folder as where they are being used.
 
