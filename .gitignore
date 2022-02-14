@@ -12,5 +12,5 @@ __pycache__/
 __GITHUB__.py
 
 ## Output data
-test_course/output/
+output/
 *.tar.gz
