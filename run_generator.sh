@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to execute Edx Generator
+# Script to execute edX Generator
 
 edx_generator_script="./edx_generator.py"
 input="./input"
