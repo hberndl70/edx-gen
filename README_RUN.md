@@ -1,4 +1,4 @@
-# Running the Möbius MOOC Generator
+# Running the edX Generator
 
 Important note:
 
@@ -26,14 +26,6 @@ The following extensions are used:
 
 extensions = ['extra', 'sane_lists']
 
-## Set AWS Credentials for S3 Upload
-
-The `.mob` files need to be uploaded to an S3 bucket. In order for this to work, you need to specify some settings.
-* The settings for the s3 bucket are specified in the `__SETTINGS__.py` file in the MOOC root input folder.
-* The auth settings for accessing your AWS account are specified in the file `__AWS__.py`, in the `aws_cred` folder.
-
-For the auth settings, got to the folder `aws_cred`, and you will find a file called `__AWS__.template.py`. Rename this file to `__AWS__.py` and add your ID and secret key. 
-
 ## Execution
 
 There are two Python scripts:
@@ -43,11 +35,6 @@ There are two Python scripts:
 Execute the generator:
 ```
 python ./edx_generator.py "C:/xxxx/mooc1-procedural-modelling" "C:/Data/xxxx/mooc1"
-```
-
-Execute the uploader:
-```
-python ./mob_uploader.py "C:/xxxx/mooc1-procedural-modelling"
 ```
 
 The `__SETTINGS__.py` file in the MOOC root input folder specifies a set of global settings that you can set for your context. 
