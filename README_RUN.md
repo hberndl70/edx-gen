@@ -16,7 +16,7 @@ This Python3 script requires three python modules. These can be installed with `
 * `pip install lxml`
 * `pip install boto3`
 
-Markdown is processes using the python markdown module.
+Markdown is processed using the python markdown module.
 - https://python-markdown.github.io
 
 The following extensions are used:
@@ -24,7 +24,6 @@ The following extensions are used:
 - https://python-markdown.github.io/extensions/fenced_code_blocks/
 - https://python-markdown.github.io/extensions/tables/
 
-extensions = ['extra', 'sane_lists']
 
 ## Execution
 
