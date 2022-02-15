@@ -67,7 +67,8 @@ Optional
 Additional submit problem settings are as follows:
 
 _Required_
-- `answer_filename="answer_model.mob"` (not shown to the learner)
+- `answer_filename="answer_model.mob"`
+(not shown to the learner)
 
 Optional
 - `example_filename="example_model.mob"` (shown to the learner)

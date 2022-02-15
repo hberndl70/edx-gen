@@ -5,7 +5,7 @@ Below is a list of the settings that can be specified for each type of folder an
     
 ## Root Folder Settings
 
-The heading must starts with `# MOOC`.
+The heading must starts with `# ROOT`.
 
 Additional MOOC metadata is as follows:
 
@@ -18,7 +18,7 @@ _The values must match the values on edx. If they do not match, import of the .t
 
 ## Common Settings For Folders
 
-Common setting folders (except the top level MOOC folder) are as follows:
+Common setting folders (except the top level ROOT folder) are as follows:
 
 _Required_
 - `display_name="xxx"` 
@@ -39,7 +39,6 @@ Optional
 - `cert_html_view_enabled="true"`
 - `course_image="course_image.jpg"`
 - `graceperiod="900 seconds"`
-- `instructor_info="[Luke Skywalker, Han Solo]"` <<< Currently causing an error
 - `invitation_only="true"`
 - `language="en"`
 - `learning_info="[]"`
