@@ -58,7 +58,6 @@ In the tar file folder structure, the hierarchy is as follows
 
 In this document, we will use the first, i.e. course > section > subsection > unit > component. This matches what users see in the user interface. However, the python script will generate a .tar.gz file that uses the second. 
 
-Sections are usually named as 'Week 1'. 'Week 2', etc.
 
 # Writing .md Files
 
