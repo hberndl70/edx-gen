@@ -2,7 +2,7 @@
 
 Important note:
 
-**WARNING: any existing contents in the output folder (i.e. in this case `./out/MOOC1`) will be deleted.**
+**WARNING: any existing contents in the output folder (i.e. in this case `./output/chapter`) will be deleted.**
 
 **WARNING: When you upload the .tar.gz file to Edx, any existing course contents in edx will be deleted.**
 
@@ -28,21 +28,20 @@ extensions = ['extra', 'sane_lists']
 
 ## Execution
 
-There are two Python scripts:
-* `edx_generator.py`: Generates all the MOOC files, including the `.tar.gz` file that can be uploaded to directly to Edx.
-* `mob_uploader.py`: Uploads `.mob` files to your AWS s3 bucket.
+There is the `edx_generator.py` Python script:
+It generates all the edX files which comprise the course, including the `.tar.gz` file for the import of the course into edX.
 
 Execute the generator:
 ```
-python ./edx_generator.py "C:/xxxx/mooc1-procedural-modelling" "C:/Data/xxxx/mooc1"
+python ./edx_generator.py ./academy/input/course-starter ./output/course-starter
 ```
 
-The `__SETTINGS__.py` file in the MOOC root input folder specifies a set of global settings that you can set for your context. 
+The `__SETTINGS__.py` file in the edX course root input folder specifies a set of global settings that you can set for your context. 
 
-**WARNING: any existing contents in the output folder (i.e. in this case `./out/MOOC1`) will be deleted.**
+**WARNING: any existing contents in the output folder (i.e. in this case `./output/chapter`) will be deleted.**
 
 ## Upload the .tar.gz File
 
-After running the edx generator (assuming no errors), a `tar.gz` file will be generated. This file can be uploaded to your MOOC.
+After running the edX generator (assuming no errors), a `tar.gz` file will be generated. This file can be uploaded to the edX platform.
 
-**WARNING: When you upload the .tar.gz file to Edx, any existing course contents in edx will be deleted.**
+**WARNING: When you upload the .tar.gz file to edX, any existing course contents in this edX course will be deleted.**
