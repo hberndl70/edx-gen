@@ -158,7 +158,7 @@ def addVideoXML(video_tag, video_asset_tag, component_path, settings, unit_filen
     # for example "https://mooc-s3cf.s3-ap-southeast-1.amazonaws.com/Fruit+basket_uk.mp4"]
     # create the video urls
     
-    url_base = __SETTINGS__.S3_LINKS_URL + __SETTINGS__.S3_MOOC_FOLDER + '/' + __SETTINGS__.S3_VIDEOS_FOLDER + '/'
+    url_base = __SETTINGS__.S3_URL + __SETTINGS__.S3_BUCKET + '/' + __SETTINGS__.S3_FOLDER + '/'
     for lang in __SETTINGS__.LANGUAGES:
         # orig code: video_urls[lang] = url_base  + video_filename + '_' + lang + '.' + video_ext
         video_urls[lang] = url_base  + video_filename + '.' + video_ext
