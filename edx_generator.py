@@ -96,7 +96,7 @@ def processCourse():
                             comps.append([unit_comp_filename, unit_comp_type])
 
                     # put assets in static folder of zip
-                    elif filex in __SETTINGS__.EDX_ASSET_FILE_EXTENSIONS:
+                    elif filex in __SETTINGS__.EDX_ASSET_EXT:
                         # this is an asset that needs to get copied to the STATIC folder
                         writeAsset(filepath, filename, unit_filename)
 
@@ -138,7 +138,7 @@ def main():
     # create the tar file
     [out_folder_path, out_folder_name] = os.path.split(sys.argv[2])
     tar_path = os.path.normpath(os.path.join(sys.argv[2], '..'))
-    tar_file_path = os.path.join(tar_path, __SETTINGS__.EDX_ROOT + '.tar.gz')
+    tar_file_path = os.path.join(tar_path, __SETTINGS__.EDX_COURSE + '.tar.gz')
     tar = tarfile.open(tar_file_path, 'w:gz')
     os.chdir(out_folder_path)
     tar.add(out_folder_name, recursive=True)
