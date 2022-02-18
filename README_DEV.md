@@ -39,14 +39,14 @@ In the example, short folder names used. This is because when the final files ge
 For the edx import to succeed, it is vital that settings in the root .md file (which is the .md file in the root folder) match the settings in edx.
 ~~~~~~~~~~~~~
 EDX_ORG = 'my_org' 
-EDX_ROOT = 'my_course_number' 
-EDX_URL = 'my_url_run'
+EDX_NUM = 'my_course_number' 
+EDX_RUN = 'my_url_run'
 ~~~~~~~~~~~~~
 
 In the edx UI for the course, under the menu 'Settings > Schedule & Details', these are named as follows:
 - EDX_ORG = Organization
-- EDX_ROOT = Course Number
-- EDX_URL = Course Run
+- EDX_NUM = Course Number
+- EDX_RUN = Course Run
 
 ## Hierarchical Terminology
 
@@ -54,7 +54,7 @@ In  the edx interface, the hierarchy is as follows:
 -  course > section > subsection > unit > component
 
 In the tar file folder structure, the hierarchy is as follows
--  course > chapter > sequence   > vertical > component
+-  course > chapter > sequence > vertical > component
 
 In this document, we will use the first, i.e. course > section > subsection > unit > component. This matches what users see in the user interface. However, the python script will generate a .tar.gz file that uses the second. 
 
