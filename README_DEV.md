@@ -45,7 +45,7 @@ url_name="<course run>"
 
 In the edx UI for the course, under the menu 'Settings > Schedule & Details', these are named as follows:
 - EDX_ORG = Organization
-- EDX_NUMBER = Course Number
+- EDX_NUM = Course Number
 - EDX_RUN = Course Run
 
 ## Hierarchical Terminology
