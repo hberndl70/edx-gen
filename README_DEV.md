@@ -39,14 +39,14 @@ In the example, short folder names used. This is because when the final files ge
 For the edx import to succeed, it is vital that settings in the root .md file (which is the .md file in the root folder) match the settings in edx.
 ~~~~~~~~~~~~~
 EDX_ORG = 'my_org' 
-S3_MOOC_FOLDER = 'my_course_number' 
-EDX_URL_NAME = 'my_url_run'
+EDX_ROOT = 'my_course_number' 
+EDX_URL = 'my_url_run'
 ~~~~~~~~~~~~~
 
 In the edx UI for the course, under the menu 'Settings > Schedule & Details', these are named as follows:
 - EDX_ORG = Organization
-- S3_MOOC_FOLDER = Course Number
-- EDX_URL_NAME = Course Run
+- EDX_ROOT = Course Number
+- EDX_URL = Course Run
 
 ## Hierarchical Terminology
 
