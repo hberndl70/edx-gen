@@ -184,7 +184,7 @@ def _updateATag(a_tag, href, unit_filename):
         return
 
     # an asset that goes to the edx static folder
-    if href_file_ext in __SETTINGS__.EDX_ASSET_FILE_EXTENSIONS:
+    if href_file_ext in __SETTINGS__.EDX_ASSET_EXT:
         new_href = '/' + _edx_consts.STATIC_FOLDER + '/' + unit_filename + '_' + href_file
         a_tag.set('href', new_href)
 
