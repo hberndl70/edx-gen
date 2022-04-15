@@ -2,9 +2,9 @@
 # Folders
 # Hierarchical Terminology (very confusing)
 # In  the edx interface, the names are as follows:
-# -  course > section > subsection > unit     > component
+#   - course > section > subsection > unit     > component
 # In the tar file folder structure, the names are as follows
-# -  course > chapter > sequence   > vertical > component
+#   - course > chapter > sequence   > vertical > component
 # For the input data, we will use the first appraoch, since it follows the edx UI
 # For the output, we must use the second approach
 
