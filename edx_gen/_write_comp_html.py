@@ -5,24 +5,6 @@ from edx_gen import  _process_html
 from edx_gen import  _css_settings
 from edx_gen import  _util
 import __SETTINGS__
-#--------------------------------------------------------------------------------------------------
-WARNING = "      WARNING:"
-
-CHECKBOXES_INSTRUCTIONS = [
-    'Please select all applicable options from the list below. ' + 
-    'Multiple selections are allowed.'][0]
-
-SUBMIT_EXAMPLE_DESCRIPTION = [
-    'Below is an example of the output that you need to submit. ' + 
-    'This model does not include the procedure. ' + 
-    'That is the part you need to figure out.' +
-    'If you look at the paremeters, you will see the values that were used to generate this version of the model.'][0]
-
-SUBMIT_INSTRUCTIONS = [
-    'Please submit your Mobius Model. ' + 
-    'First create your answer model and save it to your local drive. ' + 
-    'Then click Submit and select your .mob file. ' + 
-    'Your submission will be auto-graded and you should receiev the results within a few seconds.'][0]
 
 #--------------------------------------------------------------------------------------------------
 # write xml for Html component

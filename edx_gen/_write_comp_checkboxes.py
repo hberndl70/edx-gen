@@ -7,11 +7,12 @@ from edx_gen import  _write_comp_util
 import __SETTINGS__
 
 #--------------------------------------------------------------------------------------------------
-WARNING = "      WARNING:"
-
+# Text strings
 CHECKBOXES_INSTRUCTIONS = [
     'Please select all applicable options from the list below. ' + 
     'Multiple selections are allowed.'][0]
+
+WARNING                 = "      WARNING:"
 
 #--------------------------------------------------------------------------------------------------
 # write xml for problem Checkboxescomponent

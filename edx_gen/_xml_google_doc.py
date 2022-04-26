@@ -4,12 +4,14 @@ from edx_gen import  _edx_consts
 from edx_gen import  _process_html
 from edx_gen import  _css_settings
 import __SETTINGS__
+
 #--------------------------------------------------------------------------------------------------
-WARNING = "      WARNING:"
+# Text strings
+WARNING     = "      WARNING:"
 
 EMBED_START = '<iframe src="'
 
-EMBED_END = '" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>'
+EMBED_END   = '" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>'
 
 #--------------------------------------------------------------------------------------------------
 # xml for google doc component
@@ -29,6 +31,7 @@ def tagForGoogleDocComp(filename, settings, unit_filename):
     component_tag = etree.Element('google-document')
     component_tag.set('xblock-family', 'xblock.v1')
     component_tag.set('url_name', filename)
+
     # display name
     if 'display_name' in settings:
         component_tag.set('display_name', settings['display_name'])
@@ -36,6 +39,7 @@ def tagForGoogleDocComp(filename, settings, unit_filename):
     else:
         component_tag.set('display_name', 'Google Document')
         component_tag.set('alt_text', 'Google Document')
+        
     # url
     if 'google_doc_url' in settings:
         embed_code = EMBED_START + settings['google_doc_url'] + EMBED_END

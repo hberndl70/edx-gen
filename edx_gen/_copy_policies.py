@@ -2,6 +2,7 @@ import sys, os
 import shutil
 from edx_gen import _edx_consts
 import __SETTINGS__
+
 #--------------------------------------------------------------------------------------------------
 # Text strings
 WARNING = "      WARNING:"

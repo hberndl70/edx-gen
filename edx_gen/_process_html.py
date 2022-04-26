@@ -5,10 +5,12 @@ from edx_gen import  _edx_consts
 from edx_gen import  _css_settings
 from edx_gen import  _util
 import __SETTINGS__
+
 #--------------------------------------------------------------------------------------------------
 # Text strings
 WARNING = "      WARNING:"
-INFO = "      INFO:"
+INFO    = "      INFO:"
+
 #--------------------------------------------------------------------------------------------------
 # process a hrefs
 def processHtmlTags(component_path, content_root_tag, unit_filename):

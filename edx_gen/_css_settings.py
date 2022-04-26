@@ -81,25 +81,3 @@ CODE_LINE_CSS = ';'.join([
     'padding: 5px'
     ])
     
-#--------------------------------------------------------------------------------------------------
-# Settings for the language buttons
-# These are the buttons that appear under each video
-
-LANG_BUTTON_CSS = ';'.join([
-    'padding:2px',
-    'margin:1px',
-    'border-style:solid',
-    'border-width:1px',
-    'display:inline',
-    'cursor:pointer'
-    ])
-
-SELECT_LANG_SCRIPT = '''
-function myFunction(lang) {
-  document.getElementById('chinese').style="display:none";
-  document.getElementById('french').style="display:none";
-  if (lang !== 'none') {
-    document.getElementById(lang).style="display:block";
-  }
-}
-'''

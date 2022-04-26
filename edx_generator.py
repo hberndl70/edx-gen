@@ -23,6 +23,7 @@ from edx_gen import  _write_comps
 from edx_gen import  _copy_policies
 from edx_gen import  _util
 import __SETTINGS__
+
 #--------------------------------------------------------------------------------------------------
 # Text strings
 WARNING = "      WARNING:"

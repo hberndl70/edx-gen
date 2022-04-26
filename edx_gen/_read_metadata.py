@@ -5,6 +5,7 @@ from edx_gen import  _edx_consts
 # Text strings
 WARNING = "      WARNING:"
 ERROR   = "      ERROR:"
+
 #--------------------------------------------------------------------------------------------------
 # get the settings from a component or a folder
 # returns a dict of settings
