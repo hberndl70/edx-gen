@@ -7,11 +7,8 @@ from edx_gen import  _write_structure
 from edx_gen import  _write_comps
 from edx_gen import  _write_comp_html
 from edx_gen import  _write_comp_checkboxes
-from edx_gen import  _write_comp_multiplechoice
 from edx_gen import  _write_comp_video
-from edx_gen import  _xml_final_proj
 from edx_gen import  _xml_google_doc
-from edx_gen import  _xml_discuss
 from edx_gen import  _markdown
 from edx_gen import  _util
 import __SETTINGS__
@@ -123,46 +120,6 @@ def _writeFilesForSnippet(md_filepath, comp_filename, tree_snippet, unit_filenam
         return _write_comp_checkboxes.writeXmlForProbCheckboxesComp(
             md_filepath, comp_filename, tree_snippet, settings, unit_filename)
     
-    elif comp_type == 'problem-multiplechoice':
-        print("    |_ PROBLEM MULTI-CHOICE")
-
-        # get the setting out of the meta_tag
-        settings = _read_metadata.getMetaSettings(md_filepath, meta_tag, 
-            _edx_consts.COMP_PROB_QUIZ_REQ, _edx_consts.COMP_PROB_QUIZ_OPT )
-
-        # check that we have settings
-        if not settings:
-            print(WARNING, 'There seem to be no settings for this "problem-multiplechoice" component:', md_filepath)
-            return
-
-        # remove h1 meta_tag from the tree so it does not end up in the output
-        tree_snippet.remove(meta_tag)
-
-        # write .xml file to COMP_PROBS_FOLDER
-        # return the list of files
-        return _write_comp_multiplechoice.writeXmlForProbMultiplechoiceComp(
-            md_filepath, comp_filename, tree_snippet, settings, unit_filename)
-
-#    elif comp_type == 'problem-submit':
-#        print("    |_ PROBLEM SUBMIT")
-#
-#        # get the setting out of the meta_tag
-#        settings = _read_metadata.getMetaSettings(md_filepath, meta_tag, 
-#            _edx_consts.COMP_PROB_SUBMIT_REQ , _edx_consts.COMP_PROB_SUBMIT_OPT )
-#
-#        # check that we have settings
-#        if not settings:
-#            print(WARNING, 'There seem to be no settings for this "problem-submit" component:', md_filepath)
-#            return
-#
-#        # remove h1 meta_tag from the tree so it does not end up in the output
-#        tree_snippet.remove(meta_tag)
-#
-#        # write .xml file to COMP_HTML_FOLDER
-#        # write .xml file to COMP_PROBS_FOLDER
-#        # return the list of files
-#        return _write_comp_submit.writeXmlForSubmitComp(
-#            md_filepath, comp_filename, tree_snippet, settings, unit_filename)
     
     elif comp_type == 'video':
         print("    |_ VIDEO COMP")
@@ -187,23 +144,6 @@ def _writeFilesForSnippet(md_filepath, comp_filename, tree_snippet, unit_filenam
         return _write_comp_video.writeXmlForVidComp(
             md_filepath, comp_filename, settings, unit_filename)
 
-    elif comp_type == 'final-project':
-        print("    |_ FINAL PROJECT")
-
-        # get the setting out of the meta_tag
-        settings = _read_metadata.getMetaSettings(md_filepath, meta_tag,
-            _edx_consts.COMP_FINAL_PROJ_REQ, _edx_consts.COMP_FINAL_PROJ_OPT)
-
-        # check that we have settings
-        if not settings:
-            print(
-                WARNING, 'There seem to be no settings for this "final-project" component:', md_filepath)
-            return
-
-        # in this case, no files are written
-        # we return the component tag instead
-        return _xml_final_proj.tagForFinalProj(comp_filename, settings)
-
 
     elif comp_type == 'google-doc':
         print("    |_ GOOGLE DOC COMP")
@@ -221,23 +161,6 @@ def _writeFilesForSnippet(md_filepath, comp_filename, tree_snippet, unit_filenam
         # we return the component tag instead
         return _xml_google_doc.tagForGoogleDocComp(comp_filename, settings, unit_filename)
 
-
-    elif comp_type == 'discussion':
-        print("    |_ DISCUSS COMP")
-
-        # get the setting out of the meta_tag
-        settings = _read_metadata.getMetaSettings(md_filepath, meta_tag, 
-            _edx_consts.COMP_DISCUSS_REQ, _edx_consts.COMP_DISCUSS_OPT )
-
-        # check that we have settings
-        if not settings:
-            print(WARNING, 'There seem to be no settings for this "discussion" component:', md_filepath)
-            return
-
-        # in this case, no files are written
-        # we return the component tag instead
-        return _xml_discuss.tagForDiscussComp( comp_filename, settings, unit_filename, 
-            unit_display_name)
 
     else:
         print(WARNING, 'Component type not recognised:', comp_type, "in", md_filepath)
