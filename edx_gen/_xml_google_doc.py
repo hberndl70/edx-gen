@@ -23,7 +23,11 @@ def tagForGoogleDocComp(filename, settings, unit_filename):
     #     xblock-family = "xblock.v1" 
     #     display_name = "Google Document" 
     #     alt_text = "" 
-    #     embed_code = "&lt;iframe&#10; src=&quot;https://docs.google.com/forms/d/e/1FAIpQLScCy4XgLwL7PXE_53Mu5oK7orx1kTfhX9jhapobkbhC2Ft7eg/viewform&quot;&#10; frameborder=&quot;0&quot;&#10; width=&quot;960&quot;&#10; height=&quot;569&quot;&#10; allowfullscreen=&quot;true&quot;&#10; mozallowfullscreen=&quot;true&quot;&#10; webkitallowfullscreen=&quot;true&quot;&gt;&#10;&lt;/iframe&gt;&#10;"
+    #     embed_code = "&lt;iframe&#10; src=&quot;
+    #     https://docs.google.com/forms/d/e/1FAIpQLScCy4XgLwL7PXE_53Mu5oK7orx1kTfhX9jhapobkbhC2Ft7eg/viewform&quot;&#10; 
+    #     frameborder=&quot;0&quot;&#10; width=&quot;960&quot;&#10; height=&quot;569&quot;&#10; allowfullscreen=&quot;
+    #     true&quot;&#10; mozallowfullscreen=&quot;true&quot;&#10; webkitallowfullscreen=&quot;true&quot;&gt;&#10;&lt;
+    #     /iframe&gt;&#10;"
     # />
     # ----  ----  ----
 
