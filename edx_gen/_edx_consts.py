@@ -88,8 +88,8 @@ METADATA_ENUMS          = {
     'show_reset':               ['true', 'false'],
     'show_captions':            ['true', 'false'],
     'type':                     ['html', 'video', 'problem-checkboxes', 'google-doc'],
-    'rerandomize':              ["always", "onreset", "never", "per_student"],
-    'showanswer':               ["always", "answered", "attempted", "closed", "finished", "correct_or_past_due", "past_due", "never", "after_attempts"]
+    'rerandomize':              ["always", "never", "onreset", "per_student"],
+    'showanswer':               ["always", "never", "answered", "attempted", "closed", "finished", "past_due", "correct_or_past_due", "after_attempts"]
     # more types: [ 'problem-submit', 'problem-choice', 'problem-dropdown', 'problem-numerical', 'problem-text', 'problem-multiplechoice',  'final-project', 'discussion']
 }
 
