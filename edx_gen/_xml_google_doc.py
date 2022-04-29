@@ -7,11 +7,11 @@ import __SETTINGS__
 
 #--------------------------------------------------------------------------------------------------
 # Text strings
-WARNING     = "      WARNING:"
-
 EMBED_START = '<iframe src="'
 
 EMBED_END   = '" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>'
+
+WARNING     = "      WARNING:"
 
 #--------------------------------------------------------------------------------------------------
 # xml for google doc component
