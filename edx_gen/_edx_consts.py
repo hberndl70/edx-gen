@@ -36,9 +36,8 @@ ROOT_FOLDER_OPT         = ['visible_to_staff_only', 'start']
 
 # course
 COURSE_FOLDER_REQ       = ['display_name']
-COURSE_FOLDER_OPT       = ['visible_to_staff_only', 'enrollment_start', 'start', 'end', 'self_paced', 'is_new',
-                            'cert_html_view_enabled', 'course_image', 'graceperiod', 'instructor_info', 'invitation_only', 
-                            'language', 'learning_info', 'minimum_grade_credit', 'wiki_slug', 'cosmetic_display_price']
+COURSE_FOLDER_OPT       = ['visible_to_staff_only', 'enrollment_start', 'start', 'end', 'self_paced', 'is_new', 
+                            'cert_html_view_enabled', 'course_image', 'graceperiod', 'instructor_info', 'invitation_only', 'language', 'learning_info', 'minimum_grade_credit', 'wiki_slug', 'cosmetic_display_price']
 
 # section
 SECTION_FOLDER_REQ      = ['display_name']
@@ -59,12 +58,12 @@ COMP_HTML_REQ           = ['type']
 COMP_HTML_OPT           = ['display_name', 'visible_to_staff_only', 'start']
 
 COMP_VIDEO_REQ          = ['type']
-COMP_VIDEO_OPT          = ['video_filename', 'display_name', 'visible_to_staff_only', 'start', 'download_video',
-                            'show_captions',           'sub', 'youtube_id_1_0']
+COMP_VIDEO_OPT          = ['video_filename', 'display_name', 'visible_to_staff_only', 'start', 'download_video', 
+                            'show_captions', 'sub', 'youtube_id_1_0']
 
 COMP_PROB_QUIZ_REQ      = ['type']
-COMP_PROB_QUIZ_OPT      = ['display_name', 'visible_to_staff_only', 'id', 'verified_only', 'start', 'max_attempts',     
-                            'weight', 'showanswer', 'group_access', 'rerandomize', 'attempts_before_showanswer_button']
+COMP_PROB_QUIZ_OPT      = ['display_name', 'visible_to_staff_only', 'id', 'verified_only', 'start', 'max_attempts', 'weight', 
+                            'showanswer', 'group_access', 'rerandomize', 'attempts_before_showanswer_button']
 
 COMP_GOOGLE_DOC_REQ     = ['type']
 COMP_GOOGLE_DOC_OPT     = ['display_name', 'google_doc_url']
@@ -74,24 +73,23 @@ COMP_GOOGLE_DOC_OPT     = ['display_name', 'google_doc_url']
 
 METADATA_ENUMS          = {
 
-    'visible_to_staff_only': ['true', 'false'],
+    'visible_to_staff_only':    ['true', 'false'],
 
     # settings files
 
-    'hide_after_due': ['true', 'false'],
-    'graded': ['true', 'false'],
-    'invitation_only': ['true', 'false'],
-    'cert_html_view_enabled': ['true', 'false'],
+    'hide_after_due':           ['true', 'false'],
+    'graded':                   ['true', 'false'],
+    'invitation_only':          ['true', 'false'],
+    'cert_html_view_enabled':   ['true', 'false'],
 
     # component files
 
-    'download_video': ['true', 'false'],
-    'show_reset': ['true', 'false'],
-    'show_captions': ['true', 'false'],
-    'showanswer': ["always", "answered", "attempted", "closed", "finished", "correct_or_past_due", "past_due", "never", "after_attempts"],
-    'rerandomize': ["always", "onreset", "never", "per_student"],
-    'type': ['html', 'video', 'problem-checkboxes', 'google-doc']
-
+    'download_video':           ['true', 'false'],
+    'show_reset':               ['true', 'false'],
+    'show_captions':            ['true', 'false'],
+    'type':                     ['html', 'video', 'problem-checkboxes', 'google-doc'],
+    'rerandomize':              ["always", "onreset", "never", "per_student"],
+    'showanswer':               ["always", "answered", "attempted", "closed", "finished", "correct_or_past_due", "past_due", "never", "after_attempts"]
     # more types: [ 'problem-submit', 'problem-choice', 'problem-dropdown', 'problem-numerical', 'problem-text', 'problem-multiplechoice',  'final-project', 'discussion']
 }
 
