@@ -53,7 +53,7 @@ The unit content is added to the markdown files in the unit folders, under the s
 
 Here is a snippet of an example of some settings and content for a unit.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 # UNIT ==========
 {:
     display_name="Knowledge Check"
@@ -85,15 +85,14 @@ Some feedback about the correct answer.
 
 Some more feedback in a seperate paragraph.
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 Things to note:
 
 * This file specifies the settings for the unit and the settings for the component:
-  * html
-  * video 
-  * problem-checkboxes
+  * `html`
+  * `video` 
+  * `problem-checkboxes`
 * The settings for the unit follow the same rules as those described above. 
   * NOTE: _that the text `# UNIT` must appear on the first line._
 * Follwoing the settings for the unit, each component starts with a heading `# COMPONENT`

@@ -12,12 +12,12 @@ The settings differ for each componet. However, there are certain common setting
 
 One important setting is called `type`, which defines the type of component being defined.
 
-Possible values of 'type' are as follows:
+Possible values of `type` are as follows:
 - `type="text"`
 - `type="video"`
 - `type="problem-checkboxes"`
 
-At the moment, for problems, only 'problem-checkboxes' are implemented.
+At the moment, for problems, only `problem-checkboxes` are implemented.
 - problem-checkboxes: A problem where the learner needs to answer checkbox questions (with one or multiple right answers).
 
 Other common setting for all components  are as follows:
