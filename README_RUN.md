@@ -8,21 +8,22 @@ Important note:
 
 Make sure to save backups!
 
+
 ## Dependencies
 
 This Python3 script requires three python modules. These can be installed with `pip` as follows:
 
 * `pip install markdown`
 * `pip install lxml`
-* `pip install boto3`
+
 
 Markdown is processed using the python markdown module.
 - https://python-markdown.github.io
 
 The following extensions are used:
 - https://python-markdown.github.io/extensions/extra/
-- https://python-markdown.github.io/extensions/fenced_code_blocks/
 - https://python-markdown.github.io/extensions/tables/
+- https://python-markdown.github.io/extensions/fenced_code_blocks/
 
 
 ## Execution
@@ -38,6 +39,7 @@ python ./edx_generator.py ./academy/input/course-starter ./output/course-starter
 The `__SETTINGS__.py` file in the edX course root input folder specifies a set of global settings that you can set for your context. 
 
 **WARNING: any existing contents in the output folder (i.e. in this case `./output/chapter`) will be deleted.**
+
 
 ## Upload the .tar.gz File
 

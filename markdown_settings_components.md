@@ -3,6 +3,7 @@
 
 Below is a list of the settings that can be specified for each type of component.
 
+
 ## Common Settings For Components
 
 For components, the heading above the settings must starts with `# COMPONENT`.
@@ -14,11 +15,9 @@ One important setting is called `type`, which defines the type of component bein
 Possible values of 'type' are as follows:
 - `type="text"`
 - `type="video"`
-- `type="problem-submit"`
 - `type="problem-checkboxes"`
 
-At the moment, for problems, only 'problem-submit' and 'problem-checkboxes' are implemented.
-- problem-submit: A problem where the learner needs to submit a file that will be uploade to the edx server and graded with an external grader. 
+At the moment, for problems, only 'problem-checkboxes' are implemented.
 - problem-checkboxes: A problem where the learner needs to answer a checkboxes question (with multiple right answers).  Feedback
 
 Other common setting for all components  are as follows:
@@ -32,11 +31,13 @@ Optional
 
 The `display_name` is not displayed to the user in the edx interface.
 
+
 ## Text
 
 Additional text settings are as follows:
 
 NIL
+
 
 ## Video
 
@@ -50,6 +51,7 @@ Optional
 - `download_video="false"`
 - ... and many more
 
+
 ## Problem - Checkboxes
 
 Additional checkboxes  problem settings are as follows:
@@ -62,16 +64,4 @@ Optional
 - `rerandomize: "always"` or `"never"` or ...
 - `attempts_before_showanswer_button: "1"`
 
-## Problem - Submit
 
-Additional submit problem settings are as follows:
-
-_Required_
-- `answer_filename="answer_model.mob"`
-(not shown to the learner)
-
-Optional
-- `example_filename="example_model.mob"` (shown to the learner)
-- `max_attempts="2"` 
-- `weight="1.0"`
-- `showanswer="finished"`

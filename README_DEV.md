@@ -15,6 +15,7 @@ There are two types of files:
   - Images can be .png and .jpg
   - The assets should be placed in the same folder where they are used, i.e. in the unit folder.
 
+
 ## Structure of Folders and .md files
 
 The folder structure is as follows:
@@ -34,9 +35,11 @@ Note that the alphanumeric ordering of the folders is important, as this will re
 
 In the example, short folder names used. This is because when the final files get generated, the files names will concatenate all the folder names. So in order to avoid long file names in the final output, it is advisable to keep the folder names short. In addition, in the example, we start the filename with an '_' (underscore). This is to ensure that the markdown file will always be listed at the top of the file list. (But this is just a convenience, not a requirement.)
 
+
 ## Root .md file
 
 For the edx import to succeed, it is vital that settings in the root .md file (which is the .md file in the root folder) match the settings in edx.
+
 ~~~~~~~~~~~~~
 org="<organization>" 
 course="<course number>"
@@ -47,6 +50,7 @@ In the edx UI for the course, under the menu 'Settings > Schedule & Details', th
 - EDX_ORG = Organization
 - EDX_NUM = Course Number
 - EDX_RUN = Course Run
+
 
 ## Hierarchical Terminology
 

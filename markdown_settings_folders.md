@@ -2,7 +2,8 @@
 # Settings for Folders
 
 Below is a list of the settings that can be specified for each type of folder and each type of component.
-    
+
+
 ## Root Folder Settings
 
 The heading must starts with `# ROOT`.
@@ -16,6 +17,7 @@ _Required_
 
 _The values must match the values on edx. If they do not match, import of the .tar.gz file into edx will fail._
 
+
 ## Common Settings For Folders
 
 Common setting folders (except the top level ROOT folder) are as follows:
@@ -28,6 +30,7 @@ Optional
 - `start="&quot;2019-08-18T10:00:00+00:00&quot;"`
 
 The display_name is the name that will be displayed to the user in the edx interface.
+
 
 ## Course Folder Settings
 
@@ -45,6 +48,7 @@ Optional
 - `minimum_grade_credit="0.8"`
 - `wiki_slug="xxx"`
 
+
 ## Section Folder Settings
 
 The heading must starts with `# SECTION`.
@@ -52,6 +56,7 @@ The heading must starts with `# SECTION`.
 Additional section metadata is as follows:
 
 NIL
+
 
 ## Subsection Folder Settings
 
@@ -64,6 +69,7 @@ Optional
 - `graded="true"`
 - `due="2019-08-25T10:00:00+00:00"`
 - `hide_after_due="true"`
+
 
 ## Unit Folder Settings
 

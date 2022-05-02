@@ -8,6 +8,7 @@ There are two type of markdown content.
 
 * _Unit Content_: This markdown specifies the actual cotent of each unit, as a series of components.
 
+
 ## Folder Settings
 
 Folder settings are specified at the top of all markdown files in the same way. These files containing the settings specify the configuration for the folder. So, for example, the .md file in the 'course' folder `_course.md` specifies the settings for the `course` part. 
@@ -45,6 +46,7 @@ For more information on the settings that can be specified for folders:
 
 * See [Settings for Folders](markdown_settings_folders.md)
 
+
 ## Unit Content
 
 The unit content is added to the markdown files in the unit folders, under the settings. The markdown defines a sequence of components, each of which has its own settings.
@@ -54,7 +56,7 @@ Here is a snippet of an example of some settings and content for a unit.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # UNIT ==========
 {:
-    display_name="Ungraded Quiz"
+    display_name="Knowledge Check"
 }
 
 # COMPONENT ==========
@@ -83,39 +85,24 @@ Some feedback about the correct answer.
 
 Some more feedback in a seperate paragraph.
 
-# COMPONENT ==========
-{:
-    type="problem-submit"
-    display_name="A Problem with File Submission"
-    attempts_before_showanswer_button="1" 
-    max_attempts="1"
-    showanswer="finished"
-    weight="1.0"
-    answer="answer.txt"
-}
-
-This is a submit problem, where a file needs to be uploaded that will be autograded by an external grader.
-
-===
-
-The text describes the solution to the problem.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Things to note:
 
-* This file specifies the settings for the unit and the settings for two components:
-  * a checkboxes problem, and 
-  * a submit problem.
-* The settings for the unit follow the same rules as those described above. Note that the text `# UNIT` must appear on the first line.
+* This file specifies the settings for the unit and the settings for the component:
+  * a checkboxes problem
+* The settings for the unit follow the same rules as those described above. 
+  Note that the text `# UNIT` must appear on the first line.
 * Follwoing the settings for the unit, each component starts with a heading `# COMPONENT`
 * Follwoing the heading, the `{: }` settings define settings specific to that component.
-* One important required setting is the `type="xxx"` setting. Valid values are:
-  * `type="html"`, `type="problem-checkboxes"`, `type="problem-submit"`, `type="video"`, 
+* One important required setting is the `type="xxx"` setting. 
+  Valid values are:
+  * `type="html"`,  `type="video"`, `type="problem-checkboxes"`
 * The actual content of the component is specifid after the settings. This can be specified in normal markdown.
 * Note that all the blank lines are significant.
 
-For  'problem-checkboxes' and 'problem-submit' components, it is necessary to divide the content into different parts. This is done using the `===` characters (with blank lines above and below).
+For  'problem-checkboxes'  component, it is necessary to divide the content into different parts. This is done using the `===` characters (with blank lines above and below).
 
 The 'problem-checkboxes' has three parts, so the content must include two `===` splitters:
 
@@ -126,12 +113,6 @@ The 'problem-checkboxes' has three parts, so the content must include two `===` 
 * Bottom: The problem solution, only displayed to the learner after certain conditions are met (as specified in the settings).
 
 For checkboxes choices, the correct and incorrect choices are specified by starting with `[ ]` or `[x]` (small `x`, is important). Each choice must be seperated by an empty line.
-
-The 'problem-submit' has two parts, so the content must include one `===` splitter:
-
-* Top: The problem description.
-* `===`
-* Bottom: The problem solution, only displayed to the learner after certain conditions are met (as specified in the settings).
 
 For more information on the settings that can be specified for components:
 

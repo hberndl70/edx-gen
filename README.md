@@ -9,6 +9,7 @@ The aim is:
 
 The basic workflow is that you create all your content locally, in a specific folder structure (described below). When you run the python script, it generates a compressed .tar.gz file that can be directly imported into a edX course. When this file is imported, it will automatically populate all course contents on edx.
 
+
 ## More Information
 
 For more information about creating the content for the Edx Generator:
