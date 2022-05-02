@@ -4,7 +4,7 @@ Important note:
 
 **WARNING: any existing contents in the output folder (i.e. in this case `./output/chapter`) will be deleted.**
 
-**WARNING: When you upload the .tar.gz file to Edx, any existing course contents in edx will be deleted.**
+**WARNING: When you upload the .tar.gz file to edX, any existing course contents in edx will be deleted.**
 
 Make sure to save backups!
 
@@ -32,17 +32,18 @@ There is the `edx_generator.py` Python script:
 It generates all the edX files which comprise the course, including the `.tar.gz` file for the import of the course into edX.
 
 Execute the generator:
+
 ```
 python ./edx_generator.py ./academy/input/course-starter ./output/course-starter
-```
+````
 
 The `__SETTINGS__.py` file in the edX course root input folder specifies a set of global settings that you can set for your context. 
 
 **WARNING: any existing contents in the output folder (i.e. in this case `./output/chapter`) will be deleted.**
 
 
-## Upload the .tar.gz File
+## Upload the `.tar.gz` File
 
 After running the edX generator (assuming no errors), a `tar.gz` file will be generated. This file can be uploaded to the edX platform.
 
-**WARNING: When you upload the .tar.gz file to edX, any existing course contents in this edX course will be deleted.**
+**WARNING: When you upload the `.tar.gz` file to edX, any existing course contents in this edX course will be deleted.**

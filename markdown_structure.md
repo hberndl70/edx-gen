@@ -11,7 +11,7 @@ There are two type of markdown content.
 
 ## Folder Settings
 
-Folder settings are specified at the top of all markdown files in the same way. These files containing the settings specify the configuration for the folder. So, for example, the .md file in the 'course' folder `_course.md` specifies the settings for the `course` part. 
+Folder settings are specified at the top of all markdown files in the same way. These files containing the settings specify the configuration for the folder. So, for example, the .md file in the `course` folder `_course.md` specifies the settings for the `course` part. 
 
 Here is a snippet of an example of some settings for the folder `course` in the file `_course.md`.
 
@@ -35,12 +35,12 @@ Things to note:
 * The settings start with a heading. This heading must be created at the first line of the file.
 * The heading text should be in upper case, and should start with the type of folder it is in:
   * `# ROOT`, `# COURSE`, `# SECTION`, `# SUBSECTION`, `# UNIT`
-  * Note that you can add additional text. The requirement is just that the text starts with these specififc characters. For example, you may like some separators '===' to make the document visually clearer.
+  * NOTE: _that you can add additional text. The requirement is just that the text starts with these specififc characters. For example, you may like some separators '===' to make the document visually clearer._
 * The settings are enclosed in curly braces, like this `{: }`. Note the colon, it is important.
 * The `{: }` settings must immediatley following the heading. There can be now blank lines.
 * Inside the  `{: }` settings container, each setting consists of a key-value pair, `key="value"`. The key-value pairs can be on different lines, but there can be no spaces around the `=` sign. So `key = "value"` will not work.
 
-The files for all these folders only contain settings except the `unit` folders, there is the strcutured content of the course.  So there should be nothing in the file after the settings. (If there is more text below, it will be ignored.)
+The files for all these folders only contain settings except the `unit` folders, there is the structured content of the course.  So there should be nothing in the file after the settings. (If there is more text below, it will be ignored.)
 
 For more information on the settings that can be specified for folders:
 
@@ -91,18 +91,22 @@ Some more feedback in a seperate paragraph.
 Things to note:
 
 * This file specifies the settings for the unit and the settings for the component:
-  * a checkboxes problem
+  * html
+  * video 
+  * problem-checkboxes
 * The settings for the unit follow the same rules as those described above. 
-  Note that the text `# UNIT` must appear on the first line.
+  * NOTE: _that the text `# UNIT` must appear on the first line._
 * Follwoing the settings for the unit, each component starts with a heading `# COMPONENT`
 * Follwoing the heading, the `{: }` settings define settings specific to that component.
 * One important required setting is the `type="xxx"` setting. 
   Valid values are:
-  * `type="html"`,  `type="video"`, `type="problem-checkboxes"`
+  * `type="html"`
+  * `type="video"`
+  * `type="problem-checkboxes"`
 * The actual content of the component is specifid after the settings. This can be specified in normal markdown.
-* Note that all the blank lines are significant.
+* NOTE: _that all the blank lines are significant._
 
-For  'problem-checkboxes'  component, it is necessary to divide the content into different parts. This is done using the `===` characters (with blank lines above and below).
+For `problem-checkboxes` component, it is necessary to divide the content into different parts. This is done using the `===` characters (with blank lines above and below).
 
 The 'problem-checkboxes' has three parts, so the content must include two `===` splitters:
 

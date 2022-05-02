@@ -18,18 +18,18 @@ Possible values of 'type' are as follows:
 - `type="problem-checkboxes"`
 
 At the moment, for problems, only 'problem-checkboxes' are implemented.
-- problem-checkboxes: A problem where the learner needs to answer a checkboxes question (with multiple right answers).  Feedback
+- problem-checkboxes: A problem where the learner needs to answer checkbox questions (with one or multiple right answers).
 
 Other common setting for all components  are as follows:
 
 _Required_
 - `display_name="unit name"`
 
-Optional
+_Optional_
 - `visible_to_staff_only+"true"`
 - `start="2019-08-18T10:00:00+00:00"`
 
-The `display_name` is not displayed to the user in the edx interface.
+The `display_name` is not displayed to the user in the edX interface.
 
 
 ## Text
@@ -47,16 +47,16 @@ _Required_  (either one of the two)
 - `youtube_id_1_0="3_yD_cEKoCk"`
 - `video_filename="my_video.mp4"`
 
-Optional
+_Optional_
 - `download_video="false"`
 - ... and many more
 
 
 ## Problem - Checkboxes
 
-Additional checkboxes  problem settings are as follows:
+Additional checkboxes problem settings are as follows:
 
-Optional
+_Optional_
 - `max_attempts: "2"`
 - `weight: "1.0"`
 - `showanswer: "finished"`
