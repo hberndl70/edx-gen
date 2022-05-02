@@ -55,4 +55,5 @@ def tagForGoogleDocComp(filename, settings, unit_filename):
     return [
         [component_tag, 'google-doc']
     ]
+    
 #--------------------------------------------------------------------------------------------------

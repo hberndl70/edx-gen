@@ -44,4 +44,5 @@ def ends(text, ends_list):
         if text.endswith(end):
             return True
     return False
+    
 #--------------------------------------------------------------------------------------------------

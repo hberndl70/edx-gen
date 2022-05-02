@@ -41,4 +41,5 @@ def getMetaSettings(input, meta_tag, req_names, opt_names=None):
     # return the settings as two dicts or one dict
     req_values.update(opt_values)
     return req_values
+    
 #--------------------------------------------------------------------------------------------------

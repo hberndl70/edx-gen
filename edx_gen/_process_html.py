@@ -156,7 +156,7 @@ def _processHtmlATags(component_path, a_tags, unit_filename):
         else:
             _updateATag(a_tag, href, unit_filename)
 
-
+#--------------------------------------------------------------------------------------------------
 # update the href in an <a href=''></a> tag
 def _updateATag(a_tag, href, unit_filename):
 

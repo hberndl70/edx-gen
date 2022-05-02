@@ -166,5 +166,4 @@ def _writeFilesForSnippet(md_filepath, comp_filename, tree_snippet, unit_filenam
     else:
         print(WARNING, 'Component type not recognised:', comp_type, "in", md_filepath)
 
-
 #--------------------------------------------------------------------------------------------------

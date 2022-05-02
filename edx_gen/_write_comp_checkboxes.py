@@ -17,7 +17,7 @@ WARNING                 = "      WARNING:"
 #--------------------------------------------------------------------------------------------------
 # write xml for problem Checkboxescomponent
 def writeXmlForProbCheckboxesComp(component_path, filename, content, settings, unit_filename):
-
+    
     # ----  ----  ----
     # <problem 
     #   display_name="Q2" 

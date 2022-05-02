@@ -95,7 +95,6 @@ def writeXmlForVidComp(component_path, filename, settings, unit_filename):
 
     # return the file name and folder
     return files
-#--------------------------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------------------------
 # xml for the video
@@ -134,4 +133,5 @@ def addVideoXML(video_tag, video_asset_tag, component_path, settings, unit_filen
 
     # return the urls
     return video_urls
+
 #--------------------------------------------------------------------------------------------------

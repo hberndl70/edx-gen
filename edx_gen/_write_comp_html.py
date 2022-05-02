@@ -64,4 +64,5 @@ def writeXmlForHtmlComp(component_path, filename, content, settings, unit_filena
     return [
         [filename, _edx_consts.COMP_HTML_FOLDER]
     ]
+    
 #--------------------------------------------------------------------------------------------------
