@@ -4,7 +4,7 @@ Important note:
 
 **WARNING: any existing contents in the output folder (i.e. in this case `./output/chapter`) will be deleted.**
 
-**WARNING: When you upload the .tar.gz file to edX, any existing course contents in edx will be deleted.**
+**WARNING: When you upload the .tar.gz file to edX, any existing course contents in edX will be deleted.**
 
 Make sure to save backups!
 
