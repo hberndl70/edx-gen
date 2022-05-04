@@ -3,19 +3,22 @@
 H3_CSS = ';'.join([
     'font-size: 20px',
     'font-weight: 600',
-    'font-style: normal'
+    'font-style: normal',
+    'font-family: montserrat'
     ])
 
 H4_CSS = ';'.join([
     'font-size: 18px',
     'font-weight: 600',
-    'font-style: normal'
+    'font-style: normal',
+    'font-family: montserrat'
     ])
 
 H5_CSS = ';'.join([
     'font-size: 16px',
     'font-weight: 600',
-    'text-decoration: normal'
+    'text-decoration: normal',
+    'font-family: montserrat'
     ])
 
 #--------------------------------------------------------------------------------------------------
@@ -31,9 +34,10 @@ FIGCAPTION_CSS = ';'.join([
     # 'display:block',
     # 'margin-left:auto',
     # 'margin-right:auto',
-    'margin-top:8px',
-    'text-align:right',
-    'font-style:italic'
+    'margin-top: 8px',
+    'text-align: right',
+    'font-style: italic',
+    'font-family: montserrat'
     ])
 
 IMAGE_MODAL_CSS = ';'.join([
@@ -58,7 +62,7 @@ CODE_INLINE_CSS = ';'.join([
     #'font-family:Terminus,Consolas,Courier,Terminal,monospace'
     'font-size: 14px',
     'font-weight: 600',
-    'font-family:monospace',
+    'font-family: monospace',
     'margin: 0 2px',
     'padding: 0px 5px',
     'border: 1px solid #eaeaea',
@@ -76,7 +80,7 @@ CODE_BOX_CSS = ';'.join([
 CODE_LINE_CSS = ';'.join([
     'font-size: 15px',
     'font-weight: 400',
-    'font-family:monospace',
+    'font-family: monospace',
     'margin: 2px',
     'padding: 5px'
     ])
