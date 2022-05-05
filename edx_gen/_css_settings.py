@@ -1,21 +1,21 @@
 #--------------------------------------------------------------------------------------------------
 # Settings for headings
 H3_CSS = ';'.join([
-    'font-size: 20px',
+    'font-size: 24px',
     'font-weight: 600',
     'font-style: normal',
     'font-family: montserrat'
     ])
 
 H4_CSS = ';'.join([
-    'font-size: 18px',
+    'font-size: 20px',
     'font-weight: 600',
     'font-style: normal',
     'font-family: montserrat'
     ])
 
 H5_CSS = ';'.join([
-    'font-size: 16px',
+    'font-size: 18px',
     'font-weight: 600',
     'text-decoration: normal',
     'font-family: montserrat'
@@ -25,7 +25,7 @@ H5_CSS = ';'.join([
 # Settings for figures
 
 FIGURE_CSS = ';'.join([
-    'margin-top:20px',
+    'margin-top: 20px',
     'margin-bottom:20px'
     ])
 
@@ -60,7 +60,7 @@ IMAGE_CSS = ';'.join([
 
 CODE_INLINE_CSS = ';'.join([
     #'font-family:Terminus,Consolas,Courier,Terminal,monospace'
-    'font-size: 14px',
+    'font-size: 16px',
     'font-weight: 600',
     'font-family: monospace',
     'margin: 0 2px',
@@ -78,7 +78,7 @@ CODE_BOX_CSS = ';'.join([
     ])
 
 CODE_LINE_CSS = ';'.join([
-    'font-size: 15px',
+    'font-size: 16px',
     'font-weight: 400',
     'font-family: monospace',
     'margin: 2px',
