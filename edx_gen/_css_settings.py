@@ -5,7 +5,7 @@ H3_CSS = ";".join(
         "font-size: 24px",
         "font-weight: 600",
         "font-style: normal",
-        "font-family: roboto",
+       
     ]
 )
 
@@ -14,7 +14,7 @@ H4_CSS = ";".join(
         "font-size: 20px",
         "font-weight: 600",
         "font-style: normal",
-        "font-family: roboto",
+      
     ]
 )
 
@@ -23,7 +23,7 @@ H5_CSS = ";".join(
         "font-size: 18px",
         "font-weight: 600",
         "text-decoration: normal",
-        "font-family: roboto",
+       
     ]
 )
 
@@ -37,7 +37,7 @@ FIGCAPTION_CSS = ";".join(
         "margin-top: 8px",
         "text-align: right",
         "font-style: italic",
-        "font-family: roboto",
+        
     ]
 )
 
@@ -57,7 +57,7 @@ IMAGE_CSS = ";".join(
 
 CODE_INLINE_CSS = ";".join(
     [
-        "font-family:Consolas,Courier,Terminal,monospace",
+        "font-family:Courier,monospace",
         "font-size: 16px",
         "font-weight: 600",
         "font-family: monospace",
