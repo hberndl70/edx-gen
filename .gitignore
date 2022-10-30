@@ -14,3 +14,4 @@ __GITHUB__.py
 ## Output data
 output/
 *.tar.gz
+.DS_Store
