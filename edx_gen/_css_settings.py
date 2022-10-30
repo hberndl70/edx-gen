@@ -5,7 +5,6 @@ H3_CSS = ";".join(
         "font-size: 24px",
         "font-weight: 600",
         "font-style: normal",
-       
     ]
 )
 
@@ -14,7 +13,6 @@ H4_CSS = ";".join(
         "font-size: 20px",
         "font-weight: 600",
         "font-style: normal",
-      
     ]
 )
 
@@ -23,7 +21,6 @@ H5_CSS = ";".join(
         "font-size: 18px",
         "font-weight: 600",
         "text-decoration: normal",
-       
     ]
 )
 
@@ -37,7 +34,6 @@ FIGCAPTION_CSS = ";".join(
         "margin-top: 8px",
         "text-align: right",
         "font-style: italic",
-        
     ]
 )
 
