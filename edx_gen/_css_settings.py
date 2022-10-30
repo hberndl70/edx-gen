@@ -53,7 +53,6 @@ IMAGE_CSS = ";".join(
 
 CODE_INLINE_CSS = ";".join(
     [
-        "font-family:Courier,monospace",
         "font-size: 16px",
         "font-weight: 600",
         "font-family: monospace",
