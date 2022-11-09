@@ -39,15 +39,15 @@ FIGCAPTION_CSS = ";".join(
 
 IMAGE_MODAL_CSS = ";".join(
     [
-        "border-style:none",
-        "border-width:1px",
+        "border-style: none",
+        "border-width: 1px",
     ]
 )
 
 IMAGE_CSS = ";".join(
     [
-        "border-style:none",
-        "border-width:1px",
+        "border-style: none",
+        "border-width: 1px",
     ]
 )
 
